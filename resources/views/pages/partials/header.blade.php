@@ -69,17 +69,11 @@
         <div class="flex-row container">
           <div class="flex-col hide-for-medium flex-left">
             <ul class="nav nav-left medium-nav-center nav-small  nav-divided">
-              <li id="menu-item-257" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-257 menu-item-design-default">
-                <a href="https://ifee.edu.vn/" class="nav-top-link">IFEE</a>
-              </li>
-              <li id="menu-item-258" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-258 menu-item-design-default">
-                <a href="https://xuanmaijsc.vn/" class="nav-top-link">XMG</a>
-              </li>
-              <li id="menu-item-259" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-259 menu-item-design-default">
-                <a href="https://vnuf.edu.vn/" class="nav-top-link">VNUF</a>
-              </li>
               <li id="menu-item-260" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-260 menu-item-design-default">
-                <a href="https://cuclamnghiep.gov.vn/" class="nav-top-link">VNFOREST</a>
+                <a target="_blank" href="https://cuclamnghiep.gov.vn/" class="nav-top-link">VNFOREST</a>
+              </li>
+              <li id="menu-item-257" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-257 menu-item-design-default">
+                <a target="_blank" href="http://mard.gov.vn/" class="nav-top-link">MARD</a>
               </li>
             </ul>
           </div>
@@ -93,10 +87,10 @@
                   <a href="https://www.facebook.com/lamnghiep4.0" target="_blank" data-label="Facebook" rel="noopener noreferrer nofollow" class="icon plain facebook tooltip" title="Follow on Facebook">
                     <i class="icon-facebook"></i>
                   </a>
-                  <a href="mailto:info@ifee.edu.vn" data-label="E-mail" rel="nofollow" class="icon plain  email tooltip" title="Send us an email">
+                  <a href="mailto:tonghop@vnforest.gov.vn" data-label="E-mail" rel="nofollow" class="icon plain  email tooltip" title="Send us an email">
                     <i class="icon-envelop"></i>
                   </a>
-                  <a href="tel:+842466830212" target="_blank" data-label="Phone" rel="noopener noreferrer nofollow" class="icon plain  phone tooltip" title="Call us">
+                  <a href="tel:02438438792" target="_blank" data-label="Phone" rel="noopener noreferrer nofollow" class="icon plain  phone tooltip" title="Call us">
                     <i class="icon-phone"></i>
                   </a>
                   <a href="https://www.youtube.com/channel/UCMMHXxI1RsJbNj1KjhnMZKQ" target="_blank" rel="noopener noreferrer nofollow" data-label="YouTube" class="icon plain  youtube tooltip" title="Follow on YouTube">

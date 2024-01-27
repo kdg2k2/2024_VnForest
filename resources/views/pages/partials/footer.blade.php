@@ -177,7 +177,7 @@
                 <div class="social-icons follow-icons"><a href="https://www.facebook.com/lamnghiep4.0"
                         target="_blank" data-label="Facebook" rel="noopener noreferrer nofollow"
                         class="icon primary button circle facebook tooltip" title="Follow on Facebook"><i
-                            class="icon-facebook"></i></a><a href="mailto:info@ifee.edu.vn" data-label="E-mail"
+                            class="icon-facebook"></i></a><a href="mailto:tonghop@vnforest.gov.vn" data-label="E-mail"
                         rel="nofollow" class="icon primary button circle  email tooltip"
                         title="Send us an email"><i class="icon-envelop"></i></a><a
                         href="https://www.youtube.com/channel/UCMMHXxI1RsJbNj1KjhnMZKQ" target="_blank"

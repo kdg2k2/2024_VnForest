@@ -533,9 +533,9 @@
 </style>
 <!--[if IE]><link rel="stylesheet" type="text/css" href="{{ asset('/main_template/wp-content/themes/flatsome/assets/css/ie-fallback.css') }}"><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script><script>var head = document.getElementsByTagName('head')[0],style = document.createElement('style');style.type = 'text/css';style.styleSheet.cssText = ':before,:after{content:none !important';head.appendChild(style);setTimeout(function(){head.removeChild(style);}, 0);</script><script src="{{ asset('/main_template/wp-content/themes/flatsome/assets/libs/ie-flexibility.js') }}"
     ></script><![endif]-->
-<link rel="icon" href="{{ asset('/main_template/wp-content/uploads/2024/01/cropped-logo_vnforest-32x32.png') }}"
+<link rel="icon" href="{{ asset('/img/cropped-images-2-32x32.png') }}"
     sizes="32x32" />
-<link rel="icon" href="{{ asset('/main_template/wp-content/uploads/2024/01/cropped-logo_vnforest-192x192.png') }}"
+<link rel="icon" href="{{ asset('/img/cropped-images-2-32x32.png') }}"
     sizes="192x192" />
 <link rel="apple-touch-icon"
     href="{{ asset('/main_template/wp-content/uploads/2024/01/cropped-logo_vnforest-180x180.png') }}"/>
