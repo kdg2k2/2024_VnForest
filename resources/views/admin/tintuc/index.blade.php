@@ -125,7 +125,7 @@
             //xóa id
             var btn_delete_item = document.getElementById('btn-delete-item')
             btn_delete_item.onclick = function () {
-                deleteForm.action = "/tintuc/" + id;
+                deleteForm.action = "/admin/tintuc/delete/" + id;
                 deleteForm.submit();
             }
         });

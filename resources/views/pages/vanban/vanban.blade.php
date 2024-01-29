@@ -18,128 +18,83 @@
           <div class="row">
             <div id="content" class="large-9 left col col-divided" role="main">
               <div class="page-inner">
-                <div class="row large-columns-1 medium-columns-1 small-columns-1 has-shadow row-box-shadow-1 row-box-shadow-1-hover">
-                  <div class="col post-item">
-                    <div class="col-inner">
-                      <a href="https://vnforest1.xuanmaijsc.vn/2024/01/24/quyet-dinh-593-qd-tcln-khhtqt-ngay-28-12-2018-ve-cong-nhan-tien-bo-ky-thuat-linh-vuc-lam-nghiep/" class="plain">
-                        <div class="box box-vertical box-text-bottom box-blog-post has-hover">
-                          <div class="box-text text-left is-small">
-                            <div class="box-text-inner blog-post-inner">
-                              <h5 class="post-title is-large ">Quyết định 593/QĐ-TCLN-KH&#038;HTQT ngày 28/12/2018 về Công nhận tiến bộ kỹ thuật lĩnh vực Lâm nghiệp</h5>
-                              <div class="post-meta is-small op-8">24/01/2024</div>
-                              <div class="is-divider"></div>
+                
+                <div class="document-search">
+                  <div class="document-search-title">TÌM KIẾM VĂN BẢN</div>
+                  <div class="document-search-input">
+                    <table class="table search-condition">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="label">
+                              <span>Lĩnh vực:</span>
                             </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col post-item">
-                    <div class="col-inner">
-                      <a href="https://vnforest1.xuanmaijsc.vn/2024/01/24/to-chuc-va-hoat-dong-cua-quy-bao-ve-va-phat-trien-rung-viet-nam-quyet-dinh-so-3618-qd-bnn-tccb-ngay-28-8-2023/" class="plain">
-                        <div class="box box-vertical box-text-bottom box-blog-post has-hover">
-                          <div class="box-text text-left is-small">
-                            <div class="box-text-inner blog-post-inner">
-                              <h5 class="post-title is-large ">Tổ chức và hoạt động của Quỹ Bảo vệ và phát triển rừng Việt Nam (Quyết định số 3618/QĐ-BNN-TCCB ngày 28/8/2023)</h5>
-                              <div class="post-meta is-small op-8">24/01/2024</div>
-                              <div class="is-divider"></div>
+                            <div class="input">
+                              <select name="ctrl_191017_163$drdDocCategory" id="ctrl_191017_163_drdDocCategory">
+                                <option selected="selected" value="0">-- Tất cả --</option>
+                              </select>
                             </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col post-item">
-                    <div class="col-inner">
-                      <a href="https://vnforest1.xuanmaijsc.vn/2024/01/24/chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-cua-phong-quan-ly-rung-dac-dung-phong-ho-thuoc-cuc-lam-nghiep/" class="plain">
-                        <div class="box box-vertical box-text-bottom box-blog-post has-hover">
-                          <div class="box-text text-left is-small">
-                            <div class="box-text-inner blog-post-inner">
-                              <h5 class="post-title is-large ">Chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Phòng quản lý rừng đặc dụng, phòng hộ thuộc Cục Lâm nghiệp</h5>
-                              <div class="post-meta is-small op-8">24/01/2024</div>
-                              <div class="is-divider"></div>
+                          </td>
+                          <td>
+                            <div class="label">
+                              <span>Loại văn bản:</span>
                             </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col post-item">
-                    <div class="col-inner">
-                      <a href="https://vnforest1.xuanmaijsc.vn/2024/01/24/chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-cua-phong-che-bien-va-thuong-mai-lam-san-thuoc-cuc-lam-nghiep/" class="plain">
-                        <div class="box box-vertical box-text-bottom box-blog-post has-hover">
-                          <div class="box-text text-left is-small">
-                            <div class="box-text-inner blog-post-inner">
-                              <h5 class="post-title is-large ">Chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Phòng Chế biến và Thương mại lâm sản thuộc Cục Lâm nghiệp</h5>
-                              <div class="post-meta is-small op-8">24/01/2024</div>
-                              <div class="is-divider"></div>
+                            <div class="input">
+                              <select name="ctrl_191017_163$drdDocOrg" id="ctrl_191017_163_drdDocOrg">
+                                <option selected="selected" value="0">-- Tất cả --</option>
+                              </select>
                             </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col post-item">
-                    <div class="col-inner">
-                      <a href="https://vnforest1.xuanmaijsc.vn/2024/01/24/chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-cua-phong-to-chuc-san-xuat-lam-nghiep-thuoc-cuc-lam-nghiep-2/" class="plain">
-                        <div class="box box-vertical box-text-bottom box-blog-post has-hover">
-                          <div class="box-text text-left is-small">
-                            <div class="box-text-inner blog-post-inner">
-                              <h5 class="post-title is-large ">Chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Phòng Tổ chức sản xuất lâm nghiệp thuộc Cục Lâm nghiệp</h5>
-                              <div class="post-meta is-small op-8">24/01/2024</div>
-                              <div class="is-divider"></div>
+                          </td>
+                          <td>
+                            <div class="label">
+                              <span>Năm ban hành:</span>
                             </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col post-item">
-                    <div class="col-inner">
-                      <a href="https://vnforest1.xuanmaijsc.vn/2024/01/24/chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-cua-phong-su-dung-rung-thuoc-cuc-lam-nghiep/" class="plain">
-                        <div class="box box-vertical box-text-bottom box-blog-post has-hover">
-                          <div class="box-text text-left is-small">
-                            <div class="box-text-inner blog-post-inner">
-                              <h5 class="post-title is-large ">Chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Phòng Sử dụng rừng thuộc Cục Lâm nghiệp</h5>
-                              <div class="post-meta is-small op-8">24/01/2024</div>
-                              <div class="is-divider"></div>
+                            <div class="input">
+                              <select name="ctrl_191017_163$drdDocYear" id="ctrl_191017_163_drdDocYear">
+                                <option selected="selected" value="0">-- Tất cả --</option>
+                              </select>
                             </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col post-item">
-                    <div class="col-inner">
-                      <a href="https://vnforest1.xuanmaijsc.vn/2024/01/24/chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-cua-phong-phat-trien-rung-thuoc-cuc-lam-nghiep/" class="plain">
-                        <div class="box box-vertical box-text-bottom box-blog-post has-hover">
-                          <div class="box-text text-left is-small">
-                            <div class="box-text-inner blog-post-inner">
-                              <h5 class="post-title is-large ">Chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Phòng Phát triển rừng thuộc Cục Lâm nghiệp</h5>
-                              <div class="post-meta is-small op-8">24/01/2024</div>
-                              <div class="is-divider"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col post-item">
-                    <div class="col-inner">
-                      <a href="https://vnforest1.xuanmaijsc.vn/2024/01/24/chuc-nang-nhiem-vu-quyen-han-va-co-cau-to-chuc-cua-phong-phap-che-thanh-tra-thuoc-cuc-lam-nghiep/" class="plain">
-                        <div class="box box-vertical box-text-bottom box-blog-post has-hover">
-                          <div class="box-text text-left is-small">
-                            <div class="box-text-inner blog-post-inner">
-                              <h5 class="post-title is-large ">Chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Phòng Pháp chế, Thanh tra thuộc Cục Lâm nghiệp</h5>
-                              <div class="post-meta is-small op-8">24/01/2024</div>
-                              <div class="is-divider"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
+
+                <div class="row large-columns-1 medium-columns-1 small-columns-1 has-shadow row-box-shadow-1 row-box-shadow-1-hover">
+                  @foreach ($data as $item)
+                  <div class="col post-item">
+                    <div class="col-inner">
+                      <a href="/van-ban/{{ $item->slug }}" class="plain">
+                        <div class="box box-vertical box-text-bottom box-blog-post has-hover">
+                          <div class="box-text text-left is-small">
+                            <div class="box-text-inner blog-post-inner">
+                              <h5 class="post-title is-large ">{{ $item->tenvb }}</h5>
+                              <div class="post-meta is-small op-8">Số Hiệu: {{ $item->sohieu }}</div>
+                              <div class="post-meta is-small op-8">Năm Phát Hành: {{ $item->namphathanh }}</div>
+                              <div class="is-divider"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  @endforeach
+                </div>
+                <ul class="page-numbers nav-pagination links text-center">
+                  {{-- <li>
+                    <span aria-current="page" class="page-number current">1</span>
+                  </li>
+                  <li>
+                    <a class="page-number" href="https://vnforest1.xuanmaijsc.vn/category/menu-tin-tuc-su-kien/tin-tong-cuc-lam-nghiep/page/2/">2</a>
+                  </li>
+                  <li>
+                    <a class="next page-number" href="https://vnforest1.xuanmaijsc.vn/category/menu-tin-tuc-su-kien/tin-tong-cuc-lam-nghiep/page/2/">
+                      <i class="icon-angle-right"></i>
+                    </a>
+                  </li> --}}
+                  {{$data->appends(request()->query())->links()}}
+                </ul>
               </div>
             </div>
             <div class="large-3 col">

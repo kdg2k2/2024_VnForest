@@ -1,0 +1,28 @@
+.btn-sm {
+    padding: 5px 10px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
+.btn-sm:hover{
+    background-color: #fff;
+    border: solid 1px #1c1b1b;
+}
+
+.btn-success {
+    background-color: #249824b8;
+}
+
+.btn-info {
+    background-color: #31c795;
+}
+
+.pagination li.page-item {
+    background: #2fc785;
+    padding: 1px 10px;
+    border-radius: 15%;
+}
+
+.pagination li.page-item.active{
+    background: #1c925f;
+}

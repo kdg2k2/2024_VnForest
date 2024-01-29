@@ -125,6 +125,13 @@ class TinTucController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = TinTuc::findOrFail($id);
+        if(isset($data->path)){
+            if (file_exists(public_path($data->path))) {
+                unlink(public_path($data->path));
+            }
+        }
+        $data->delete();
+        return redirect('/admin/tintuc')->with('success', 'Xóa thành công');
     }
 }

@@ -38,17 +38,17 @@
 
         <li class="{{ Str::contains(Request::url(), '/admin/linhvuc') ? 'active' : '' }}">
           <a href="/admin/linhvuc" class="dropdown-toggle no-arrow {{ Str::contains(Request::url(), '/admin/linhvuc') ? 'active' : '' }}">
-            <span class="micon icon-copy dw dw-mountain-1"></span><span class="mtext">Lĩnh Vực</span>
+            <span class="micon icon-copy bi bi-file-check"></span><span class="mtext">Lĩnh Vực</span>
           </a>
         </li>
         <li class="{{ Str::contains(Request::url(), '/admin/loaivb') ? 'active' : '' }}">
           <a href="/admin/loaivb" class="dropdown-toggle no-arrow {{ Str::contains(Request::url(), '/admin/loaivb') ? 'active' : '' }}">
-            <span class="micon icon-copy dw dw-mountain-1"></span><span class="mtext">Loại Văn Bản</span>
+            <span class="micon icon-copy bi bi-file-earmark-break"></span><span class="mtext">Loại Văn Bản</span>
           </a>
         </li>
         <li class="{{ Str::contains(Request::url(), '/admin/vanban') ? 'active' : '' }}">
           <a href="/admin/vanban" class="dropdown-toggle no-arrow {{ Str::contains(Request::url(), '/admin/vanban') ? 'active' : '' }}">
-            <span class="micon icon-copy dw dw-mountain-1"></span><span class="mtext">Văn Bản</span>
+            <span class="micon icon-copy bi bi-file-earmark-pdf"></span><span class="mtext">Văn Bản</span>
           </a>
         </li>
 
@@ -60,12 +60,12 @@
         </li>
         <li class="{{ Str::contains(Request::url(), '/admin/loaitt') ? 'active' : '' }}">
           <a href="/admin/loaitt" class="dropdown-toggle no-arrow {{ Str::contains(Request::url(), '/admin/loaitt') ? 'active' : '' }}">
-            <span class="micon icon-copy dw dw-mountain-1"></span><span class="mtext">Loại tin tức</span>
+            <span class="micon icon-copy bi bi-journal-richtext"></span><span class="mtext">Loại tin tức</span>
           </a>
         </li>
         <li class="{{ Str::contains(Request::url(), '/admin/tintuc') ? 'active' : '' }}">
           <a href="/admin/tintuc" class="dropdown-toggle no-arrow {{ Str::contains(Request::url(), '/admin/tintuc') ? 'active' : '' }}">
-            <span class="micon icon-copy dw dw-mountain-1"></span><span class="mtext">Tin Tức</span>
+            <span class="micon icon-copy bi bi-layout-text-window-reverse"></span><span class="mtext">Tin Tức</span>
           </a>
         </li>
 

@@ -84,9 +84,16 @@
           <ul class="nav top-bar-nav nav-right nav-small  nav-divided">
             <li class="html header-social-icons ml-0">
               <div class="social-icons follow-icons">
-                <a href="/login" target="_blank" data-label="Facebook" rel="noopener noreferrer nofollow" class="icon plain user tooltip" title="Đăng Nhập">
+                @if (Auth::user())
+                <a href="/admin/tintuc" target="_blank" rel="noopener noreferrer nofollow" class="icon plain tooltip" title="Quản Trị">
+                  <i class="fa-solid fa-gears"></i>
+                </a> | 
+                @else
+                <a href="/login" target="_blank" rel="noopener noreferrer nofollow" class="icon plain tooltip" title="Đăng Nhập">
                   <i class="icon-user"></i>
-                </a> | <a href="https://www.facebook.com/lamnghiep4.0" target="_blank" data-label="Facebook" rel="noopener noreferrer nofollow" class="icon plain facebook tooltip" title="Follow on Facebook">
+                </a> | 
+                @endif
+                <a href="https://www.facebook.com/lamnghiep4.0" target="_blank" data-label="Facebook" rel="noopener noreferrer nofollow" class="icon plain facebook tooltip" title="Follow on Facebook">
                   <i class="icon-facebook"></i>
                 </a>
                 <a href="mailto:tonghop@vnforest.gov.vn" data-label="E-mail" rel="nofollow" class="icon plain  email tooltip" title="Send us an email">
@@ -676,9 +683,15 @@
       </li>
       <li class="html header-social-icons ml-0">
         <div class="social-icons follow-icons">
-          <a href="/login" target="_blank" data-label="Facebook" rel="noopener noreferrer nofollow" class="icon plain user tooltip" title="Đăng Nhập">
+          @if (Auth::user())
+          <a href="/admin/tintuc" target="_blank" rel="noopener noreferrer nofollow" class="icon plain tooltip" title="Quản Trị">
+            <i class="fa-solid fa-gears"></i>
+          </a> | 
+          @else
+          <a href="/login" target="_blank" rel="noopener noreferrer nofollow" class="icon plain tooltip" title="Đăng Nhập">
             <i class="icon-user"></i>
           </a> | 
+          @endif
           <a href="https://www.facebook.com/lamnghiep4.0" target="_blank" data-label="Facebook" rel="noopener noreferrer nofollow" class="icon plain facebook tooltip" title="Follow on Facebook">
             <i class="icon-facebook"></i>
           </a>

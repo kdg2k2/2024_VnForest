@@ -63,7 +63,7 @@
                                             </a>
                                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
                                                 <a class="dropdown-item" href="/admin/vanban/download/{{ $item->id }}"><i
-                                                    class="dw dw-edit2"></i> Tải</a>
+                                                    class="dw dw-download"></i> Tải</a>
                                                 <a class="dropdown-item" href="/admin/vanban/edit/{{ $item->id }}"><i
                                                         class="dw dw-edit2"></i> Sửa</a>
                                                 <a class="dropdown-item" href="#" data-toggle="modal"

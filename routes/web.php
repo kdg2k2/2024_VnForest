@@ -3,18 +3,26 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'WebController@getHome');
-Route::get('/van-ban', 'WebController@getVanban');
 
+// văn bản
+Route::get('/van-ban', 'WebController@getVanban');
+Route::get('/van-ban/{slug}', 'WebController@getXemVanban');
+Route::get('/van-ban/download/{slug}', 'WebController@getDownloadVanBan');
+Route::get('/van-ban/view/{slug}', 'WebController@getViewVanBan');
+
+//tin tức
 Route::get('/tin-tuc', 'WebController@getTintuc');
 Route::get('/tin-tuc/{slug}', 'WebController@getXemtin');
 
+//đăng nhập
 Route::get('/login', 'LoginController@getLogin');
 Route::post('/login', 'LoginController@postLogin');
 Route::get('/logout', 'LoginController@getLogout');
 
-Route::group(['prefix' => 'admin'/*, 'middleware' => 'isLogin'*/], function (){
+//quản trị
+Route::group(['prefix' => 'admin'/*, 'middleware' => 'isLogin'*/], function () {
     //user
-    Route::group(['prefix' => 'user'], function (){
+    Route::group(['prefix' => 'user'], function () {
         Route::get('/', 'UserController@index');
         Route::get('/create', 'UserController@create');
         Route::post('/store', 'UserController@store');
@@ -27,7 +35,7 @@ Route::group(['prefix' => 'admin'/*, 'middleware' => 'isLogin'*/], function (){
     });
 
     //lĩnh vực
-    Route::group(['prefix' => 'linhvuc'], function (){
+    Route::group(['prefix' => 'linhvuc'], function () {
         Route::get('/', 'LinhVucController@index');
         Route::get('/create', 'LinhVucController@create');
         Route::post('/store', 'LinhVucController@store');
@@ -37,7 +45,7 @@ Route::group(['prefix' => 'admin'/*, 'middleware' => 'isLogin'*/], function (){
     });
 
     //loại văn bản
-    Route::group(['prefix' => 'loaivb'], function (){
+    Route::group(['prefix' => 'loaivb'], function () {
         Route::get('/', 'LoaiVanBanController@index');
         Route::get('/create', 'LoaiVanBanController@create');
         Route::post('/store', 'LoaiVanBanController@store');
@@ -47,7 +55,7 @@ Route::group(['prefix' => 'admin'/*, 'middleware' => 'isLogin'*/], function (){
     });
 
     //văn bản
-    Route::group(['prefix' => 'vanban'], function (){
+    Route::group(['prefix' => 'vanban'], function () {
         Route::get('/', 'VanBanController@index');
         Route::get('/create', 'VanBanController@create');
         Route::post('/store', 'VanBanController@store');
@@ -58,7 +66,7 @@ Route::group(['prefix' => 'admin'/*, 'middleware' => 'isLogin'*/], function (){
     });
 
     //loại tin tức
-    Route::group(['prefix' => 'loaitt'], function (){
+    Route::group(['prefix' => 'loaitt'], function () {
         Route::get('/', 'LoaiTinTucController@index');
         Route::get('/create', 'LoaiTinTucController@create');
         Route::post('/store', 'LoaiTinTucController@store');
@@ -68,7 +76,7 @@ Route::group(['prefix' => 'admin'/*, 'middleware' => 'isLogin'*/], function (){
     });
 
     //tin tức
-    Route::group(['prefix' => 'tintuc'], function (){
+    Route::group(['prefix' => 'tintuc'], function () {
         Route::get('/', 'TinTucController@index');
         Route::get('/create', 'TinTucController@create');
         Route::post('/store', 'TinTucController@store');

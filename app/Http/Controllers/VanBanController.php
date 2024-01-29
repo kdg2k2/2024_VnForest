@@ -128,7 +128,7 @@ class VanBanController extends Controller
         }
         $data->save();
 
-        return redirect('/admin/vanban')->with('success', 'Thêm mới thành công');
+        return redirect('/admin/vanban')->with('success', 'Cập nhật thành công');
     }
 
     /**
@@ -150,10 +150,10 @@ class VanBanController extends Controller
 
     public function download($id){
         $file = Vanban::findOrFail($id);
-        $path = storage_path('app/'. $file->path);
+        $path = storage_path('app/' . $file->path);
         if(file_exists($path)){
             return response()->download($path);
-        }else{
+        } else {
             abort(404);
         }
     }

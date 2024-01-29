@@ -18,144 +18,42 @@
           <div class="row row-large row-divided ">
             <div class="large-9 col">
               <div class="row large-columns-1 medium-columns- small-columns-1">
+                @foreach ($data as $item)
                 <div class="col post-item">
                   <div class="col-inner">
-                    <a href="https://vnforest1.xuanmaijsc.vn/2024/01/23/hop-hoi-dong-quan-ly-quy-bao-ve-va-phat-trien-rung-viet-nam-lan-1-nam-2024/" class="plain">
+                    <a href="/tin-tuc/{{ $item->slug }}" class="plain">
                       <div class="box box-vertical box-text-bottom box-blog-post has-hover">
                         <div class="box-image" style="width:40%;">
                           <div class="image-cover" style="padding-top:56%;">
-                            <img width="600" height="371" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20600%20371%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://vnforest1.xuanmaijsc.vn/wp-content/uploads/2024/01/downloa.jpg" class="lazy-load attachment-medium size-medium wp-post-image" alt="" decoding="async" loading="lazy" />
+                            <img width="600" height="371" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20600%20371%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ $item->path }}" class="lazy-load attachment-medium size-medium wp-post-image" alt="" decoding="async" loading="lazy" />
                           </div>
                         </div>
                         <div class="box-text text-left">
                           <div class="box-text-inner blog-post-inner">
-                            <h5 class="post-title is-large ">Họp hội đồng quản lý Quỹ Bảo vệ và phát triển rừng Việt Nam lần 1 năm 2024</h5>
+                            <h5 class="post-title is-large ">{{ $item->tentt }}</h5>
                             <div class="is-divider"></div>
-                            <p class="from_the_blog_excerpt ">Sáng ngày 16/01/2024, tại Hà Nội đã diễn ra phiên họp Hội đồng quản lý... </p>
+                            <p class="from_the_blog_excerpt ">
+                              @php
+                                echo substr($item->noidung, 0, 200).'...';
+                              @endphp
+                            </p>
                           </div>
                         </div>
                         <div class="badge absolute top post-date badge-outline">
                           <div class="badge-inner">
-                            <span class="post-date-day">23</span>
+                            <span class="post-date-day">{{ date("d", strtotime($item->created_at)) }}</span>
                             <br>
-                            <span class="post-date-month is-xsmall">Th1</span>
+                            <span class="post-date-month is-xsmall">{{ date("m", strtotime($item->created_at)) }}</span>
                           </div>
                         </div>
                       </div>
                     </a>
                   </div>
                 </div>
-                <div class="col post-item">
-                  <div class="col-inner">
-                    <a href="https://vnforest1.xuanmaijsc.vn/2024/01/23/tang-cuong-lien-ket-tang-suc-canh-tranh-cho-doanh-nghiep-trong-linh-vuc-lam-nghiep/" class="plain">
-                      <div class="box box-vertical box-text-bottom box-blog-post has-hover">
-                        <div class="box-image" style="width:40%;">
-                          <div class="image-cover" style="padding-top:56%;">
-                            <img width="600" height="400" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20600%20400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://vnforest1.xuanmaijsc.vn/wp-content/uploads/2024/01/NTK_2472-600x400.jpg" class="lazy-load attachment-medium size-medium wp-post-image" alt="" decoding="async" loading="lazy" srcset="" data-srcset="https://vnforest1.xuanmaijsc.vn/wp-content/uploads/2024/01/NTK_2472-600x400.jpg 600w, https://vnforest1.xuanmaijsc.vn/wp-content/uploads/2024/01/NTK_2472-1200x800.jpg 1200w, https://vnforest1.xuanmaijsc.vn/wp-content/uploads/2024/01/NTK_2472-768x512.jpg 768w, https://vnforest1.xuanmaijsc.vn/wp-content/uploads/2024/01/NTK_2472-1536x1024.jpg 1536w, https://vnforest1.xuanmaijsc.vn/wp-content/uploads/2024/01/NTK_2472-2048x1365.jpg 2048w" sizes="(max-width: 600px) 100vw, 600px" />
-                          </div>
-                        </div>
-                        <div class="box-text text-left">
-                          <div class="box-text-inner blog-post-inner">
-                            <h5 class="post-title is-large ">Tăng cường liên kết, tăng sức cạnh tranh cho doanh nghiệp trong lĩnh vực lâm nghiệp</h5>
-                            <div class="is-divider"></div>
-                            <p class="from_the_blog_excerpt ">Thứ trưởng Nguyễn Quốc Trị nhấn mạnh các hội, hiệp hội của ngành lâm nghiệp... </p>
-                          </div>
-                        </div>
-                        <div class="badge absolute top post-date badge-outline">
-                          <div class="badge-inner">
-                            <span class="post-date-day">23</span>
-                            <br>
-                            <span class="post-date-month is-xsmall">Th1</span>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col post-item">
-                  <div class="col-inner">
-                    <a href="https://vnforest1.xuanmaijsc.vn/2024/01/23/chi-thi-ve-phat-dong-tet-trong-cay-doi-doi-nho-on-bac-ho-nhan-dip-xuan-giap-thin-nam-2024/" class="plain">
-                      <div class="box box-vertical box-text-bottom box-blog-post has-hover">
-                        <div class="box-image" style="width:40%;">
-                          <div class="image-cover" style="padding-top:56%;">
-                            <img width="600" height="400" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20600%20400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://vnforest1.xuanmaijsc.vn/wp-content/uploads/2024/01/z4796875998953_e43992a6c83784791056c49233d70023-093712_503-094641-600x400.jpg" class="lazy-load attachment-medium size-medium wp-post-image" alt="" decoding="async" loading="lazy" srcset="" data-srcset="https://vnforest1.xuanmaijsc.vn/wp-content/uploads/2024/01/z4796875998953_e43992a6c83784791056c49233d70023-093712_503-094641-600x400.jpg 600w, https://vnforest1.xuanmaijsc.vn/wp-content/uploads/2024/01/z4796875998953_e43992a6c83784791056c49233d70023-093712_503-094641.jpg 680w" sizes="(max-width: 600px) 100vw, 600px" />
-                          </div>
-                        </div>
-                        <div class="box-text text-left">
-                          <div class="box-text-inner blog-post-inner">
-                            <h5 class="post-title is-large ">Chỉ thị về phát động “Tết trồng cây đời đời nhớ ơn Bác Hồ&#8221; nhân dịp xuân Giáp Thìn năm 2024. </h5>
-                            <div class="is-divider"></div>
-                            <p class="from_the_blog_excerpt ">Ngày 12/01/2024, Bộ trưởng Bộ Nông nghiệp và Phát triển nông thôn Lê Minh Hoan... </p>
-                          </div>
-                        </div>
-                        <div class="badge absolute top post-date badge-outline">
-                          <div class="badge-inner">
-                            <span class="post-date-day">23</span>
-                            <br>
-                            <span class="post-date-month is-xsmall">Th1</span>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col post-item">
-                  <div class="col-inner">
-                    <a href="https://vnforest1.xuanmaijsc.vn/2024/01/23/thuc-hien-de-an-trong-mot-ty-cay-xanh-da-trong-duoc-gan-770-trieu-cay-dat-1214-ke-hoach/" class="plain">
-                      <div class="box box-vertical box-text-bottom box-blog-post has-hover">
-                        <div class="box-image" style="width:40%;">
-                          <div class="image-cover" style="padding-top:56%;">
-                            <img width="600" height="375" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20600%20375%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://vnforest1.xuanmaijsc.vn/wp-content/uploads/2024/01/download.jpg" class="lazy-load attachment-medium size-medium wp-post-image" alt="" decoding="async" loading="lazy" />
-                          </div>
-                        </div>
-                        <div class="box-text text-left">
-                          <div class="box-text-inner blog-post-inner">
-                            <h5 class="post-title is-large ">Thực hiện Đề án Trồng một tỷ cây xanh: đã trồng được gần 770 triệu cây, đạt 121,4% kế hoạch</h5>
-                            <div class="is-divider"></div>
-                            <p class="from_the_blog_excerpt ">Ngày 12/01/2024, tại Thành phố Đông Hà – Tỉnh Quảng Trị, Bộ Nông nghiệp và... </p>
-                          </div>
-                        </div>
-                        <div class="badge absolute top post-date badge-outline">
-                          <div class="badge-inner">
-                            <span class="post-date-day">23</span>
-                            <br>
-                            <span class="post-date-month is-xsmall">Th1</span>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col post-item">
-                  <div class="col-inner">
-                    <a href="https://vnforest1.xuanmaijsc.vn/2024/01/23/dau-an-lam-nghiep-nam-2023-lan-dau-tien-chuyen-nhuong-thanh-cong-luong-giam-phat-thai-cac-bon/" class="plain">
-                      <div class="box box-vertical box-text-bottom box-blog-post has-hover">
-                        <div class="box-image" style="width:40%;">
-                          <div class="image-cover" style="padding-top:56%;">
-                            <img width="710" height="400" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20710%20400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://vnforest1.xuanmaijsc.vn/wp-content/uploads/2024/01/Chu-tri-Hoi-nghi-710x400.jpg" class="lazy-load attachment-medium size-medium wp-post-image" alt="" decoding="async" loading="lazy" srcset="" data-srcset="https://vnforest1.xuanmaijsc.vn/wp-content/uploads/2024/01/Chu-tri-Hoi-nghi-710x400.jpg 710w, https://vnforest1.xuanmaijsc.vn/wp-content/uploads/2024/01/Chu-tri-Hoi-nghi-1400x789.jpg 1400w, https://vnforest1.xuanmaijsc.vn/wp-content/uploads/2024/01/Chu-tri-Hoi-nghi-768x433.jpg 768w, https://vnforest1.xuanmaijsc.vn/wp-content/uploads/2024/01/Chu-tri-Hoi-nghi-1536x866.jpg 1536w, https://vnforest1.xuanmaijsc.vn/wp-content/uploads/2024/01/Chu-tri-Hoi-nghi-2048x1154.jpg 2048w" sizes="(max-width: 710px) 100vw, 710px" />
-                          </div>
-                        </div>
-                        <div class="box-text text-left">
-                          <div class="box-text-inner blog-post-inner">
-                            <h5 class="post-title is-large ">Dấu ấn Lâm nghiệp năm 2023: Lần đầu tiên chuyển nhượng thành công lượng giảm phát thải các-bon</h5>
-                            <div class="is-divider"></div>
-                            <p class="from_the_blog_excerpt ">Ngày 27/12/2023, Bộ Nông nghiệp và Phát triển nông thôn tổ chức Hội nghị Tổng... </p>
-                          </div>
-                        </div>
-                        <div class="badge absolute top post-date badge-outline">
-                          <div class="badge-inner">
-                            <span class="post-date-day">23</span>
-                            <br>
-                            <span class="post-date-month is-xsmall">Th1</span>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
+                @endforeach
               </div>
               <ul class="page-numbers nav-pagination links text-center">
-                <li>
+                {{-- <li>
                   <span aria-current="page" class="page-number current">1</span>
                 </li>
                 <li>
@@ -165,7 +63,8 @@
                   <a class="next page-number" href="https://vnforest1.xuanmaijsc.vn/category/menu-tin-tuc-su-kien/tin-tong-cuc-lam-nghiep/page/2/">
                     <i class="icon-angle-right"></i>
                   </a>
-                </li>
+                </li> --}}
+                {{$data->appends(request()->query())->links()}}
               </ul>
             </div>
             <div class="post-sidebar large-3 col">

@@ -129,11 +129,14 @@
         document.querySelector(".post-form").addEventListener("submit", function (e) {
             e.preventDefault();
 
-            var titleInput = document.querySelector('input[name="tenvb"]');
-            var titleValue = titleInput.value;
+            var tenvbInput = document.querySelector('input[name="tenvb"]');
+            var tenvbValue = tenvbInput.value;
+
+            var sohieuInput = document.querySelector('input[name="sohieu"]');
+            var sohieuValue = sohieuInput.value;
 
             var slugInput = document.querySelector('input[name="slug"]');
-            slugInput.value = createSlug(titleValue);
+            slugInput.value = sohieuValue.trim()+'_'+createSlug(tenvbValue);
 
             this.submit();
         });
