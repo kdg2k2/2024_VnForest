@@ -147,4 +147,14 @@ class VanBanController extends Controller
         $data->delete();
         return redirect('/admin/vanban')->with('success', 'Xóa thành công');
     }
+
+    public function download($id){
+        $file = Vanban::findOrFail($id);
+        $path = storage_path('app/'. $file->path);
+        if(file_exists($path)){
+            return response()->download($path);
+        }else{
+            abort(404);
+        }
+    }
 }

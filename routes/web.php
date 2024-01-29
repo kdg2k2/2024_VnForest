@@ -8,6 +8,10 @@ Route::get('/van-ban', 'WebController@getVanban');
 Route::get('/tin-tuc', 'WebController@getTintuc');
 Route::get('/tin-tuc/{slug}', 'WebController@getXemtin');
 
+Route::get('/login', 'LoginController@getLogin');
+Route::post('/login', 'LoginController@postLogin');
+Route::get('/logout', 'LoginController@getLogout');
+
 Route::group(['prefix' => 'admin'/*, 'middleware' => 'isLogin'*/], function (){
     //user
     Route::group(['prefix' => 'user'], function (){
@@ -17,6 +21,9 @@ Route::group(['prefix' => 'admin'/*, 'middleware' => 'isLogin'*/], function (){
         Route::get('/edit/{id}', 'UserController@edit');
         Route::patch('/update/{id}', 'UserController@update');
         Route::delete('/delete/{id}', 'UserController@destroy');
+
+        Route::get('/change_pass', 'UserController@editPass');
+        Route::patch('/change_pass', 'UserController@updatePass');
     });
 
     //lĩnh vực
@@ -47,6 +54,7 @@ Route::group(['prefix' => 'admin'/*, 'middleware' => 'isLogin'*/], function (){
         Route::get('/edit/{id}', 'VanBanController@edit');
         Route::patch('/update/{id}', 'VanBanController@update');
         Route::delete('/delete/{id}', 'VanBanController@destroy');
+        Route::get('/download/{id}', 'VanBanController@download');
     });
 
     //loại tin tức

@@ -19,8 +19,8 @@
           <a href="/logged" class="dropdown-toggle no-arrow">
             <span class="micon icon-copy bi bi-house"></span><span class="mtext">Trang Chủ</span>
           </a>
-        </li>
-        <li>
+        </li> --}}
+        {{-- <li>
           <div class="dropdown-divider"></div>
         </li> --}}
         <li>

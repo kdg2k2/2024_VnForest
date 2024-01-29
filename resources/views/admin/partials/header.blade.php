@@ -45,7 +45,7 @@
             $id = Session::get('loginId');
         @endphp
         <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-          <a class="dropdown-item" href="/user/change_pass"><i class="dw dw-user1"></i> Tài khoản</a>
+          <a class="dropdown-item" href="/admin/user/change_pass"><i class="dw dw-user1"></i> Tài khoản</a>
           
           <a class="dropdown-item" href="/logout"><i class="dw dw-logout"></i> Đăng Xuất</a>
         </div>

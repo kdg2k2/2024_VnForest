@@ -31,6 +31,14 @@
     .select2-selection__choice {
         background-color: #2c882c !important;
     }
+
+    .select2-container--default .select2-selection--single {
+        height: 45px !important;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        line-height: 45px !important;
+    }
 </style>
 
 <!-- Tải CSS của Select2 -->

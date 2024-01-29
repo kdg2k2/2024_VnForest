@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    @include('pages.admin.partials.head')
+    @include('admin.partials.head')
     <style>
         .image-container img {
             width: 300px;
@@ -21,9 +21,9 @@
 </head>
 
 <body>
-    @include('pages.admin.partials.header')
-    @include('pages.admin.partials.right_sidebar')
-    @include('pages.admin.partials.left_sidebar')
+    @include('admin.partials.header')
+    @include('admin.partials.right_sidebar')
+    @include('admin.partials.left_sidebar')
     <div class="main-container">
         <div class="pd-ltr-20 xs-pd-20-10">
             <div class="min-height-200px">
@@ -52,58 +52,46 @@
                         <p>{{ $message }}</p>
                     </div>
                     @endif
-                    <form class="post-form" method="POST" action="{{ route('tin-tuc.update', $tintuc->id) }}"
+                    <form class="post-form" method="POST" action="/admin/tintuc/update/{{ $data->id }}"
                         enctype="multipart/form-data">
                         @csrf
                         @method('patch')
                         <div class="form-group">
-                            <label for="tieude">Tên tiêu đề</label>
-                            <input type="text" class="form-control" name="tieude" value="{{ $tintuc->tieude }}">
+                            <label for="tentt">Tên tiêu đề</label>
+                            <input type="text" class="form-control" name="tentt" value="{{ $data->tentt }}">
                         </div>
-                        <span class="text-danger">@error('tieude')
-                            {{ $message }}
-                            @enderror</span>
 
                         <div class="form-group">
-                            <input type="text" class="form-control" name="tieudekhongdau" value="{{ $tintuc->tieudekhongdau }}" hidden>
+                            <label for="id_loaitt">Loại tin</label>
+                            <select class="form-select form-control js-example-basic-single" name="id_loaitt">
+                                <option value="" selected>Chọn loại tin</option>
+                                @foreach ($loaitt as $item)
+                                <option value="{{ $item->id }}" {{ $data->id_loaitt==$item->id ? 'selected' : '' }}>{{ $item->tenloaitt }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="slug" value="{{ $data->slug }}" hidden>
                         </div>
 
                         <div class="form-group">
                             <label for="noidung">Nội dung</label>
-                            <textarea id="noidung" class="form-control ckeditor" name="noidung" rows="3">{{ $tintuc->noidung }}</textarea>
+                            <textarea id="noidung" class="form-control ckeditor" name="noidung" rows="3">{{ $data->noidung }}</textarea>
                         </div>
-                        <span class="text-danger">@error('noidung')
-                            {{ $message }}
-                            @enderror</span>
 
                         <div class="form-group">
-                            <label for="path">Hình ảnh</label>
+                            <label for="path">Ảnh đại diện tin tức</label>
                             <input type="file" class="form-control input-image-show" name="path">
-                            <input type="hidden" name="hidden_image" value="{{ $tintuc->path }}">
+                            <input type="hidden" name="hidden_image" value="{{ $data->path }}">
                             <div class="image-container">
-                                <img class="image-show" src="{{ asset($tintuc->path) }}" alt="">
+                                <img class="image-show" src="{{ asset($data->path) }}" alt="">
                             </div>
                         </div>
-                        <span class="text-danger">@error('path')
-                            {{ $message }}
-                            @enderror</span>
-
-                        <div class="form-group">
-                            <label for="id_loaitin">Loại tin</label>
-                            <select class="form-select form-control" name="id_loaitin">
-                                <option value="" selected>Chọn loại tin</option>
-                                @foreach ($loaitin as $item)
-                                <option value="{{ $item->id }}" {{ $tintuc->id_loaitin==$item->id ? 'selected' : '' }}>{{ $item->tenloaitin }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <span class="text-danger">@error('id_loaitin')
-                            {{ $message }}
-                            @enderror</span>
 
                         <div class="form-group mb-5 mt-3">
                             <button type="submit" class="btn btn-primary">Cập Nhật</button>
-                            <a style="float: right;" href="/tin-tuc-manager" class="btn btn-primary">Quay
+                            <a style="float: right;" href="/admin/tintuc" class="btn btn-primary">Quay
                                 Lại</a>
                         </div>
                     </form>
@@ -112,9 +100,14 @@
         </div>
     </div>
 
-    @include('pages.admin.partials.footer')
+    @include('admin.partials.footer')
 
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script>
+        $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+        });
+
         CKEDITOR.replace("noidung");
 
         document.querySelector('.input-image-show').addEventListener('change', function () {

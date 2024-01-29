@@ -13,6 +13,7 @@ class TinTuc extends Model
         'slug',
         'tentt',
         'noidung',
+        'path',
     ];
 
     public function user()

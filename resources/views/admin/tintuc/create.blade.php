@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    @include('pages.admin.partials.head')
+    @include('admin.partials.head')
     <style>
         .image-container img {
             width: 300px;
@@ -21,9 +21,9 @@
 </head>
 
 <body>
-    @include('pages.admin.partials.header')
-    @include('pages.admin.partials.right_sidebar')
-    @include('pages.admin.partials.left_sidebar')
+    @include('admin.partials.header')
+    @include('admin.partials.right_sidebar')
+    @include('admin.partials.left_sidebar')
     <div class="main-container">
         <div class="pd-ltr-20 xs-pd-20-10">
             <div class="min-height-200px">
@@ -36,7 +36,7 @@
                             <nav aria-label="breadcrumb" role="navigation">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item">
-                                        <a href="/logged">Trang Chủ</a>
+                                        <a href="#">Trang Chủ</a>
                                     </li>
                                     <li class="breadcrumb-item active" aria-current="page">
                                         Tin Tức
@@ -47,54 +47,41 @@
                     </div>
                 </div>
                 <div class="pd-20 bg-white border-radius-4 box-shadow mb-30">
-                    <form class="post-form" method="POST" action="{{ route('tin-tuc.store') }}"
-                        enctype="multipart/form-data">
+                    <form class="post-form" method="POST" action="/admin/tintuc/store" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
-                            <label for="tieude">Tên tiêu đề</label>
-                            <input type="text" class="form-control" name="tieude" value="{{ old('tieude') }}">
+                            <label for="tentt">Tên tiêu đề</label>
+                            <input type="text" class="form-control" name="tentt" value="{{ old('tentt') }}" required>
                         </div>
-                        <span class="text-danger">@error('tieude')
-                            {{ $message }}
-                            @enderror</span>
 
                         <div class="form-group">
-                            <input type="text" class="form-control" name="tieudekhongdau" hidden>
+                            <label for="id_loaitt">Loại tin</label>
+                            <select class="form-select form-control js-example-basic-single" name="id_loaitt" required>
+                                <option value="" selected>Chọn loại tin</option>
+                                @foreach ($loaitt as $item)
+                                <option value="{{ $item->id }}" {{ old('id_loaitt')==$item->id ? 'selected' : '' }}>{{ $item->tenloaitt }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="slug" hidden>
                         </div>
 
                         <div class="form-group">
                             <label for="noidung">Nội dung</label>
-                            <textarea id="noidung" class="form-control ckeditor" name="noidung">{{ old('noidung') }}</textarea>
+                            <textarea id="noidung" class="form-control ckeditor" name="noidung" required>{{ old('noidung') }}</textarea>
                         </div>
-                        <span class="text-danger">@error('noidung')
-                            {{ $message }}
-                            @enderror</span>
 
                         <div class="form-group">
-                            <label for="path">Hình ảnh</label>
-                            <input type="file" class="form-control input-image-show" name="path" accept="image/*">
+                            <label for="path">Ảnh đại diện tin</label>
+                            <input type="file" class="form-control input-image-show" name="path" accept=".png, .jpg, .jpeg">
                             <div class="image-container"></div>
                         </div>
-                        <span class="text-danger">@error('path')
-                            {{ $message }}
-                            @enderror</span>
-
-                        <div class="form-group">
-                            <label for="id_loaitin">Loại tin</label>
-                            <select class="form-select form-control" name="id_loaitin">
-                                <option value="" selected>Chọn loại tin</option>
-                                @foreach ($loaitin as $item)
-                                <option value="{{ $item->id }}" {{ old('id_loaitin')==$item->id ? 'selected' : '' }}>{{ $item->tenloaitin }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <span class="text-danger">@error('id_loaitin')
-                            {{ $message }}
-                            @enderror</span>
 
                         <div class="form-group mb-5 mt-3">
                             <button type="submit" class="btn btn-primary">Thêm Mới</button>
-                            <a style="float: right;" href="/tin-tuc-manager" class="btn btn-primary">Quay Lại</a>
+                            <a style="float: right;" href="/admin/tintuc" class="btn btn-primary">Quay Lại</a>
                         </div>
                     </form>
                 </div>
@@ -102,9 +89,14 @@
         </div>
     </div>
 
-    @include('pages.admin.partials.footer')
+    @include('admin.partials.footer')
 
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script>
+        $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+        });
+
         CKEDITOR.replace("noidung");
 
         document.querySelector('.input-image-show').addEventListener('change', function () {
@@ -125,10 +117,10 @@
         document.querySelector('.post-form').addEventListener('submit', function (e) {
             e.preventDefault();
 
-            var titleInput = document.querySelector('input[name="tieude"]');
+            var titleInput = document.querySelector('input[name="tentt"]');
             var titleValue = titleInput.value;
 
-            var slugInput = document.querySelector('input[name="tieudekhongdau"]');
+            var slugInput = document.querySelector('input[name="slug"]');
             slugInput.value = createSlug(titleValue);
 
             this.submit();

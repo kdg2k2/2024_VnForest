@@ -47,7 +47,7 @@
                             <div class="col-6">
                                 <div class="form-group">
                                     <label for="id_loaivb">Loại văn bản</label>
-                                    <select name="id_loaivb" id="id_loaivb" class="form-control" required>
+                                    <select name="id_loaivb" id="id_loaivb" class="form-control js-example-basic-single" required>
                                         <option value="">[Chọn]</option>
                                         @foreach ($loaivb as $item)
                                             <option value="{{ $item->id }}" @if($item->id  == $data->id_loaivb) selected @endif>{{ $item->tenloaivb }}</option>
@@ -58,7 +58,7 @@
                             <div class="col-6">
                                 <div class="form-group">
                                     <label for="id_linhvuc">Lĩnh vực</label>
-                                    <select name="id_linhvuc" id="id_linhvuc" class="form-control" required>
+                                    <select name="id_linhvuc" id="id_linhvuc" class="form-control js-example-basic-single" required>
                                         <option value="">[Chọn]</option>
                                         @foreach ($linhvuc as $item)
                                             <option value="{{ $item->id }}" @if($item->id  == $data->id_linhvuc) selected @endif>{{ $item->tenlinhvuc }}</option>
@@ -81,7 +81,7 @@
                             <div class="col-6">
                                 <div class="form-group">
                                     <label for="namphathanh">Năm Phát Hành</label>
-                                    <select class="form-control" name="namphathanh">
+                                    <select class="form-control js-example-basic-single" name="namphathanh">
                                         <option value="">[Chọn]</option>
                                         @for ($i = date('Y'); $i >= 1800; $i--)
                                             <option value="{{ $i }}" @if($i  == $data->namphathanh) selected @endif>{{ $i }}</option>
@@ -121,7 +121,11 @@
 
     @include('admin.partials.footer')
 
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script>
+        $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+        });
         document.querySelector(".post-form").addEventListener("submit", function (e) {
             e.preventDefault();
 
