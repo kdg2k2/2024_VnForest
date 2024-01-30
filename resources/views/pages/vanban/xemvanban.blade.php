@@ -24,13 +24,13 @@
                   <header class="entry-header">
                     <div class="entry-header-text entry-header-text-top text-left">
                       <h6 class="entry-category is-xsmall">
-                        <a href="https://vnforest1.xuanmaijsc.vn/category/menu-tin-tuc-su-kien/tin-tong-cuc-lam-nghiep/" rel="category tag">{{ $data->loaivb->tenloaivb }}</a> | 
-                        <a href="https://vnforest1.xuanmaijsc.vn/category/menu-tin-tuc-su-kien/tin-tong-cuc-lam-nghiep/" rel="category tag">{{ $data->linhvuc->tenlinhvuc }}</a>
+                        <a href="/van-ban/search?loaivb={{ $data->loaivb->id }}" rel="category tag">{{ $data->loaivb->tenloaivb }}</a> | 
+                        <a href="/van-ban/search?linhvuc={{ $data->linhvuc->id }}" rel="category tag">{{ $data->linhvuc->tenlinhvuc }}</a>
                       </h6>
                       <h1 class="entry-title">{{ $data->tenvb }}</h1>
                       <div class="entry-divider is-divider small"></div>
                       <div class="entry-meta uppercase is-xsmall">
-                        <span class="posted-on">Thời gian đăng tải <time class="entry-date published updated" datetime="{{ $data->created_at }}">{{ $data->created_at }}</time>
+                        <span class="posted-on">Thời gian đăng tải <time class="entry-date published updated" datetime="{{ $data->created_at }}">{{ $data->created_at ? $data->created_at : '...' }}</time>
                         </span>
                         <span class="byline"> bởi <span class="meta-author vcard">
                             {{-- <a class="url fn n" href="https://vnforest1.xuanmaijsc.vn/author/admin/">admin</a> --}}

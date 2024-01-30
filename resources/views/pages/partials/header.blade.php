@@ -198,204 +198,55 @@
             <li id="menu-item-316" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-63 current_page_item menu-item-316  menu-item-design-default">
               <a href="/" aria-current="page" class="nav-top-link">Trang chủ</a>
             </li>
-            <li id="menu-item-317" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-317 menu-item-design-default has-dropdown">
-              <a class="nav-top-link">Giới thiệu <i class="icon-angle-down"></i>
-              </a>
-              <ul class="sub-menu nav-dropdown nav-dropdown-bold">
-                <li id="menu-item-989" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-989">
-                  <a href="/van-ban">Chức năng nhiệm vụ</a>
-                </li>
-                <li id="menu-item-325" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-325">
-                  <a href="/gioi-thieu-quy-che/">Quy chế</a>
-                </li>
-                <li id="menu-item-328" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-328">
-                  <a href="/gioi-thieu-lich-su-phat-trien/">Lịch sử phát triển</a>
-                </li>
-              </ul>
-            </li>
-            <li id="menu-item-330" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-330 menu-item-design-default has-dropdown">
-              <a class="nav-top-link">Tin tức sự kiện <i class="icon-angle-down"></i>
-              </a>
-              <ul class="sub-menu nav-dropdown nav-dropdown-bold">
-                <li id="menu-item-527" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-527">
-                  <a href="/tin-tuc">Tin tức sự kiện</a>
-                </li>
-                <li id="menu-item-531" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-531">
-                  <a href="/category/menu-tin-tuc-su-kien/tin-tong-cuc-lam-nghiep/">Tin Tổng Cục Lâm nghiệp</a>
-                </li>
-                <li id="menu-item-642" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-642">
-                  <a href="/category/menu-tin-tuc-su-kien/tin-dia-phuong/">Tin địa phương</a>
-                </li>
-                <li id="menu-item-641" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-641">
-                  <a href="/category/tin-dau-thau/">Tin đấu thầu</a>
-                </li>
-                <li id="menu-item-643" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-643">
-                  <a href="/category/tin-tuyen-dung/">Tin tuyển dụng</a>
-                </li>
-              </ul>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-63 current_page_item menu-item-316  menu-item-design-default">
+              <a href="/gioi-thieu" aria-current="page" class="nav-top-link">Giới Thiệu</a>
             </li>
             <li id="menu-item-344" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-344 menu-item-design-default has-dropdown">
-              <a class="nav-top-link">Tài nguyên rừng <i class="icon-angle-down"></i>
+              <a class="nav-top-link">Tin tức tổng hợp <i class="icon-angle-down"></i>
               </a>
               <ul class="sub-menu nav-dropdown nav-dropdown-bold">
-                <li id="menu-item-363" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-363 nav-dropdown-col">
-                  <a>Tài nguyên rừng</a>
-                  <ul class="sub-menu nav-column nav-dropdown-bold">
-                    <li id="menu-item-655" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-655">
-                      <a href="/category/menu-tai-nguyen-rung/tai-nguyen-rung/">Tài nguyên rừng</a>
-                    </li>
-                    <li id="menu-item-656" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-656">
-                      <a href="/category/menu-tai-nguyen-rung/thuc-vat-rung/">Thực vật rừng</a>
-                    </li>
-                    <li id="menu-item-654" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-654">
-                      <a href="/category/menu-tai-nguyen-rung/dong-vat-rung/">Động vật rừng</a>
-                    </li>
-                    <li id="menu-item-671" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-671">
-                      <a>Sử dụng rừng</a>
-                      <ul class="sub-menu nav-column nav-dropdown-bold">
-                        <li id="menu-item-677" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-677">
-                          <a href="/category/menu-tai-nguyen-rung/su-dung-rung/">Sử dụng rừng</a>
-                        </li>
-                        <li id="menu-item-675" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-675">
-                          <a href="/category/menu-tai-nguyen-rung/khai-thac/">Khai thác</a>
-                        </li>
-                        <li id="menu-item-674" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-674">
-                          <a href="/category/menu-tai-nguyen-rung/che-bien-xnk-lam-san/">Chế biến XNK lâm sản</a>
-                        </li>
-                        <li id="menu-item-676" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-676">
-                          <a href="/category/menu-tai-nguyen-rung/quan-ly-rung-ben-vung/">Quản lý rừng bền vững</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li id="menu-item-364" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-364 nav-dropdown-col">
-                  <a>Phát triển rừng</a>
-                  <ul class="sub-menu nav-column nav-dropdown-bold">
-                    <li id="menu-item-685" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-685">
-                      <a href="/category/menu-tai-nguyen-rung/giong-lam-nghiep/">Giống lâm nghiệp</a>
-                    </li>
-                    <li id="menu-item-686" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-686">
-                      <a href="/category/menu-tai-nguyen-rung/khuyen-lam/">Khuyến lâm</a>
-                    </li>
-                    <li id="menu-item-687" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-687">
-                      <a href="/category/menu-tai-nguyen-rung/trong-rung/">Trồng rừng</a>
-                    </li>
-                    <li id="menu-item-398" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-398">
-                      <a>Bảo tồn thiên nhiên</a>
-                      <ul class="sub-menu nav-column nav-dropdown-bold">
-                        <li id="menu-item-692" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-692">
-                          <a href="/category/menu-tai-nguyen-rung/bao-ton-thien-nhien/">Bảo tồn thiên nhiên</a>
-                        </li>
-                        <li id="menu-item-691" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-691">
-                          <a href="/category/menu-tai-nguyen-rung/bao-ton-da-dang-sinh-hoc/">Bảo tồn đa dạng sinh học</a>
-                        </li>
-                        <li id="menu-item-693" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-693">
-                          <a href="/category/menu-tai-nguyen-rung/he-thong-rung-dac-dung/">Hệ thống rừng đặc dụng</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li id="menu-item-372" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-372 nav-dropdown-col">
-                  <a>Quy hoạch, kế hoạch</a>
-                  <ul class="sub-menu nav-column nav-dropdown-bold">
-                    <li id="menu-item-699" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-699">
-                      <a href="/category/menu-tai-nguyen-rung/quy-hoach/">Quy hoạch</a>
-                    </li>
-                    <li id="menu-item-700" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-700">
-                      <a href="/category/menu-tai-nguyen-rung/quy-hoach-ke-hoach/">Quy hoạch, kế hoạch</a>
-                    </li>
-                    <li id="menu-item-698" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-698">
-                      <a href="/category/menu-tai-nguyen-rung/chien-luoc-cong-trinh/">Chiến lược, công trình</a>
-                    </li>
-                    <li id="menu-item-405" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-405">
-                      <a>KHCN &#038; HTQT</a>
-                      <ul class="sub-menu nav-column nav-dropdown-bold">
-                        <li id="menu-item-712" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-712">
-                          <a href="/category/menu-tai-nguyen-rung/hoat-dong-khcn-mt/">Hoạt động KHCN &amp; MT</a>
-                        </li>
-                        <li id="menu-item-711" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-711">
-                          <a href="/category/menu-tai-nguyen-rung/hoat-dong-htqt/">Hoạt động HTQT</a>
-                        </li>
-                        <li id="menu-item-710" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-710">
-                          <a href="/category/menu-tai-nguyen-rung/chuong-trinh-du-an-htqt/">Chương trình, dự án HTQT</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li id="menu-item-381" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-381 nav-dropdown-col">
-                  <a>Bảo vệ rừng</a>
-                  <ul class="sub-menu nav-column nav-dropdown-bold">
-                    <li id="menu-item-717" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-717">
-                      <a href="/category/menu-tai-nguyen-rung/hoat-dong-bao-ve-rung/">Hoạt động bảo vệ rừng</a>
-                    </li>
-                    <li id="menu-item-718" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-718">
-                      <a href="/category/menu-tai-nguyen-rung/phong-chay-chua-chay-rung/">Phòng cháy, chữa cháy rừng</a>
-                    </li>
-                    <li id="menu-item-716" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-716">
-                      <a href="/category/menu-tai-nguyen-rung/giao-rung-quan-ly-nuong-ray/">Giao rừng, quản lý nương rẫy</a>
-                    </li>
-                    <li id="menu-item-824" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-824">
-                      <a>CITES</a>
-                      <ul class="sub-menu nav-column nav-dropdown-bold">
-                        <li id="menu-item-830" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-830">
-                          <a href="/category/menu-tai-nguyen-rung/chuc-nang-nhiem-vu/">Chức năng nhiệm vụ</a>
-                        </li>
-                        <li id="menu-item-831" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-831">
-                          <a href="/category/menu-tai-nguyen-rung/hoat-dong-cites/">Hoạt động CITES</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li id="menu-item-412" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-412 menu-item-design-default has-dropdown">
-              <a class="nav-top-link">Chỉ đạo điều hành <i class="icon-angle-down"></i>
-              </a>
-              <ul class="sub-menu nav-dropdown nav-dropdown-bold">
-                <li id="menu-item-772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-772">
-                  <a href="/cddh-van-ban-khac/">Văn bản khác</a>
-                </li>
-                <li id="menu-item-771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-771">
-                  <a href="/cddh-gop-y-van-ban/">Góp ý văn bản</a>
-                </li>
+                @php
+                  $header_loaitt = App\LoaiTinTuc::all();
+                  $itemCount = count($header_loaitt);
+                @endphp
+
+                @for ($i = 0; $i < $itemCount; $i++)
+                  @if ($i % 10 === 0)
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-363 nav-dropdown-col">
+                          <ul class="sub-menu nav-column nav-dropdown-bold">
+                  @endif
+                      <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-655">
+                          <a href="/van-ban/{{ $header_loaitt[$i]->slug }}">{{ $header_loaitt[$i]->tenloaitt }}</a>
+                      </li>
+                  @if (($i + 1) % 10 === 0 || ($i + 1) === $itemCount)
+                          </ul>
+                      </li>
+                  @endif
+                @endfor
               </ul>
             </li>
             <li id="menu-item-417" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-417 menu-item-design-default has-dropdown">
               <a class="nav-top-link">Hệ thống văn bản <i class="icon-angle-down"></i>
               </a>
               <ul class="sub-menu nav-dropdown nav-dropdown-bold">
-                <li id="menu-item-419" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-419 nav-dropdown-col">
-                  <a>Văn bản quy phạm pháp luật</a>
-                  <ul class="sub-menu nav-column nav-dropdown-bold">
-                    <li id="menu-item-1338" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1338">
-                      <a href="/category/he-thong-van-ban/van-ban-quy-pham-phap-lat/luat/">Luật</a>
-                    </li>
-                    <li id="menu-item-1339" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1339">
-                      <a href="/category/he-thong-van-ban/van-ban-quy-pham-phap-lat/nghi-dinh/">Nghị định</a>
-                    </li>
-                    <li id="menu-item-1340" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1340">
-                      <a href="/category/he-thong-van-ban/van-ban-quy-pham-phap-lat/quyet-dinh/">Quyết định</a>
-                    </li>
-                    <li id="menu-item-1341" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1341">
-                      <a href="/category/he-thong-van-ban/van-ban-quy-pham-phap-lat/thong-tu/">Thông tư</a>
-                    </li>
-                  </ul>
-                </li>
-                <li id="menu-item-418" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-418 nav-dropdown-col">
-                  <a>Văn bản hành chính</a>
-                  <ul class="sub-menu nav-column nav-dropdown-bold">
-                    <li id="menu-item-1336" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1336">
-                      <a href="/category/he-thong-van-ban/van-ban-hanh-chinh/cong-van-quyet-dinh/">Công văn, quyết định</a>
-                    </li>
-                    <li id="menu-item-1337" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1337">
-                      <a href="/category/he-thong-van-ban/van-ban-hanh-chinh/van-ban-khac-van-ban-hanh-chinh/">Văn bản khác</a>
-                    </li>
-                  </ul>
-                </li>
+                @php
+                  $header_loaivb = App\LoaiVanBan::all();
+                  $itemCountVB = count($header_loaivb);
+                @endphp
+
+                @for ($i = 0; $i < $itemCountVB; $i++)
+                  @if ($i % 10 === 0)
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-363 nav-dropdown-col">
+                          <ul class="sub-menu nav-column nav-dropdown-bold">
+                  @endif
+                      <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-655">
+                          <a href="/van-ban/{{ $header_loaivb[$i]->slug }}">{{ $header_loaivb[$i]->tenloaivb }}</a>
+                      </li>
+                  @if (($i + 1) % 10 === 0 || ($i + 1) === $itemCountVB)
+                          </ul>
+                      </li>
+                  @endif
+                @endfor
               </ul>
             </li>
             <li id="menu-item-808" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-808 menu-item-design-default">
@@ -460,199 +311,43 @@
       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-63 current_page_item menu-item-316">
         <a href="/" aria-current="page">Trang chủ</a>
       </li>
-      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-317">
-        <a>Giới thiệu</a>
-        <ul class="sub-menu nav-sidebar-ul children">
-          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-989">
-            <a href="/chuc-nang-nhiem-vu/">Chức năng nhiệm vụ</a>
-          </li>
-          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-325">
-            <a href="/gioi-thieu-quy-che/">Quy chế</a>
-          </li>
-          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-328">
-            <a href="/gioi-thieu-lich-su-phat-trien/">Lịch sử phát triển</a>
-          </li>
-        </ul>
-      </li>
-      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-330">
-        <a>Tin tức sự kiện</a>
-        <ul class="sub-menu nav-sidebar-ul children">
-          <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-527">
-            <a href="/category/menu-tin-tuc-su-kien/tin-tuc-su-kien/">Tin tức sự kiện</a>
-          </li>
-          <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-531">
-            <a href="/category/menu-tin-tuc-su-kien/tin-tong-cuc-lam-nghiep/">Tin Tổng Cục Lâm nghiệp</a>
-          </li>
-          <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-642">
-            <a href="/category/menu-tin-tuc-su-kien/tin-dia-phuong/">Tin địa phương</a>
-          </li>
-          <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-641">
-            <a href="/category/tin-dau-thau/">Tin đấu thầu</a>
-          </li>
-          <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-643">
-            <a href="/category/tin-tuyen-dung/">Tin tuyển dụng</a>
-          </li>
-        </ul>
+      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-63 current_page_item menu-item-316">
+        <a href="/gioi-thieu" aria-current="page">Giới Thiệu</a>
       </li>
       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-344">
-        <a>Tài nguyên rừng</a>
+        <a>Tin tức tổng hợp</a>
         <ul class="sub-menu nav-sidebar-ul children">
-          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-363">
-            <a>Tài nguyên rừng</a>
-            <ul class="sub-menu nav-sidebar-ul">
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-655">
-                <a href="/category/menu-tai-nguyen-rung/tai-nguyen-rung/">Tài nguyên rừng</a>
-              </li>
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-656">
-                <a href="/category/menu-tai-nguyen-rung/thuc-vat-rung/">Thực vật rừng</a>
-              </li>
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-654">
-                <a href="/category/menu-tai-nguyen-rung/dong-vat-rung/">Động vật rừng</a>
-              </li>
-              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-671">
-                <a>Sử dụng rừng</a>
-                <ul class="sub-menu nav-sidebar-ul">
-                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-677">
-                    <a href="/category/menu-tai-nguyen-rung/su-dung-rung/">Sử dụng rừng</a>
-                  </li>
-                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-675">
-                    <a href="/category/menu-tai-nguyen-rung/khai-thac/">Khai thác</a>
-                  </li>
-                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-674">
-                    <a href="/category/menu-tai-nguyen-rung/che-bien-xnk-lam-san/">Chế biến XNK lâm sản</a>
-                  </li>
-                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-676">
-                    <a href="/category/menu-tai-nguyen-rung/quan-ly-rung-ben-vung/">Quản lý rừng bền vững</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-364">
-            <a>Phát triển rừng</a>
-            <ul class="sub-menu nav-sidebar-ul">
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-685">
-                <a href="/category/menu-tai-nguyen-rung/giong-lam-nghiep/">Giống lâm nghiệp</a>
-              </li>
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-686">
-                <a href="/category/menu-tai-nguyen-rung/khuyen-lam/">Khuyến lâm</a>
-              </li>
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-687">
-                <a href="/category/menu-tai-nguyen-rung/trong-rung/">Trồng rừng</a>
-              </li>
-              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-398">
-                <a>Bảo tồn thiên nhiên</a>
-                <ul class="sub-menu nav-sidebar-ul">
-                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-692">
-                    <a href="/category/menu-tai-nguyen-rung/bao-ton-thien-nhien/">Bảo tồn thiên nhiên</a>
-                  </li>
-                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-691">
-                    <a href="/category/menu-tai-nguyen-rung/bao-ton-da-dang-sinh-hoc/">Bảo tồn đa dạng sinh học</a>
-                  </li>
-                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-693">
-                    <a href="/category/menu-tai-nguyen-rung/he-thong-rung-dac-dung/">Hệ thống rừng đặc dụng</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-372">
-            <a>Quy hoạch, kế hoạch</a>
-            <ul class="sub-menu nav-sidebar-ul">
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-699">
-                <a href="/category/menu-tai-nguyen-rung/quy-hoach/">Quy hoạch</a>
-              </li>
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-700">
-                <a href="/category/menu-tai-nguyen-rung/quy-hoach-ke-hoach/">Quy hoạch, kế hoạch</a>
-              </li>
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-698">
-                <a href="/category/menu-tai-nguyen-rung/chien-luoc-cong-trinh/">Chiến lược, công trình</a>
-              </li>
-              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-405">
-                <a>KHCN &#038; HTQT</a>
-                <ul class="sub-menu nav-sidebar-ul">
-                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-712">
-                    <a href="/category/menu-tai-nguyen-rung/hoat-dong-khcn-mt/">Hoạt động KHCN &amp; MT</a>
-                  </li>
-                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-711">
-                    <a href="/category/menu-tai-nguyen-rung/hoat-dong-htqt/">Hoạt động HTQT</a>
-                  </li>
-                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-710">
-                    <a href="/category/menu-tai-nguyen-rung/chuong-trinh-du-an-htqt/">Chương trình, dự án HTQT</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-381">
-            <a>Bảo vệ rừng</a>
-            <ul class="sub-menu nav-sidebar-ul">
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-717">
-                <a href="/category/menu-tai-nguyen-rung/hoat-dong-bao-ve-rung/">Hoạt động bảo vệ rừng</a>
-              </li>
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-718">
-                <a href="/category/menu-tai-nguyen-rung/phong-chay-chua-chay-rung/">Phòng cháy, chữa cháy rừng</a>
-              </li>
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-716">
-                <a href="/category/menu-tai-nguyen-rung/giao-rung-quan-ly-nuong-ray/">Giao rừng, quản lý nương rẫy</a>
-              </li>
-              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-824">
-                <a>CITES</a>
-                <ul class="sub-menu nav-sidebar-ul">
-                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-830">
-                    <a href="/category/menu-tai-nguyen-rung/chuc-nang-nhiem-vu/">Chức năng nhiệm vụ</a>
-                  </li>
-                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-831">
-                    <a href="/category/menu-tai-nguyen-rung/hoat-dong-cites/">Hoạt động CITES</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-412">
-        <a>Chỉ đạo điều hành</a>
-        <ul class="sub-menu nav-sidebar-ul children">
-          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-772">
-            <a href="/cddh-van-ban-khac/">Văn bản khác</a>
-          </li>
-          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-771">
-            <a href="/cddh-gop-y-van-ban/">Góp ý văn bản</a>
-          </li>
+          @for ($i = 0; $i < $itemCount; $i++)
+            @if ($i % 10 === 0)
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-363 nav-dropdown-col">
+                    <ul class="sub-menu nav-column nav-dropdown-bold">
+            @endif
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-655">
+                    <a href="/van-ban/{{ $header_loaitt[$i]->slug }}">{{ $header_loaitt[$i]->tenloaitt }}</a>
+                </li>
+            @if (($i + 1) % 10 === 0 || ($i + 1) === $itemCount)
+                    </ul>
+                </li>
+            @endif
+          @endfor
         </ul>
       </li>
       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-417">
         <a>Hệ thống văn bản</a>
         <ul class="sub-menu nav-sidebar-ul children">
-          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-419">
-            <a>Văn bản quy phạm pháp luật</a>
-            <ul class="sub-menu nav-sidebar-ul">
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1338">
-                <a href="/category/he-thong-van-ban/van-ban-quy-pham-phap-lat/luat/">Luật</a>
-              </li>
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1339">
-                <a href="/category/he-thong-van-ban/van-ban-quy-pham-phap-lat/nghi-dinh/">Nghị định</a>
-              </li>
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1340">
-                <a href="/category/he-thong-van-ban/van-ban-quy-pham-phap-lat/quyet-dinh/">Quyết định</a>
-              </li>
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1341">
-                <a href="/category/he-thong-van-ban/van-ban-quy-pham-phap-lat/thong-tu/">Thông tư</a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-418">
-            <a>Văn bản hành chính</a>
-            <ul class="sub-menu nav-sidebar-ul">
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1336">
-                <a href="/category/he-thong-van-ban/van-ban-hanh-chinh/cong-van-quyet-dinh/">Công văn, quyết định</a>
-              </li>
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1337">
-                <a href="/category/he-thong-van-ban/van-ban-hanh-chinh/van-ban-khac-van-ban-hanh-chinh/">Văn bản khác</a>
-              </li>
-            </ul>
-          </li>
+          @for ($i = 0; $i < $itemCountVB; $i++)
+            @if ($i % 10 === 0)
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-363 nav-dropdown-col">
+                    <ul class="sub-menu nav-column nav-dropdown-bold">
+            @endif
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-655">
+                    <a href="/van-ban/{{ $header_loaivb[$i]->slug }}">{{ $header_loaivb[$i]->tenloaivb }}</a>
+                </li>
+            @if (($i + 1) % 10 === 0 || ($i + 1) === $itemCountVB)
+                    </ul>
+                </li>
+            @endif
+          @endfor
         </ul>
       </li>
       <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-808">

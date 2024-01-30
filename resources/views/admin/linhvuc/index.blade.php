@@ -115,6 +115,27 @@
                 deleteForm.action = "/admin/linhvuc/delete/"+id;
                 deleteForm.submit();
             }
+
+            var string_arr = [
+    'Luật Bảo vệ Bí mật Nhà nước',
+'Luật Lâm nghiệp số 16/2017/QH14',
+'Nghị định số 156/2018/NĐ-CP ngày 16/11/2018 của Chính phủ quy định chi tiết thi hành một số điều của Luật Lâm nghiệp',
+'Nghị định số 01/2019/NĐ-CP ngày 01/012019 của Thủ tướng Chính phủ về Kiểm lâm và Lực lượng chuyên trách bảo vệ rừng',
+'Quyết định số 38/2016/QĐ-TTg ngày 14/9/2016 của Thủ tướng Chính phủ về việc ban hành một số chính sách bảo vệ, phát triển rừng và đầu tư hỗ trợ kết cấu hạ tầng, giao nhiệm vụ công ích đối với các công ty nông, lâm nghiệp',
+'Quyết định 1439/QĐ-BNN-TCLN ngày 25/4/2016 của Bộ Nông nghiệp và Phát triển nông thôn về việc ban hành Quy chế quản lý và sử dụng Hệ thống Thông tin quản lý ngành Lâm nghiệp',
+'Thông tư số 21/2017/TT-BNNPTNT ngày 15/11/2017 của Bộ Nông nghiệp và Phát triển nông thôn Hướng dẫn thực hiện Quyết định số 886/QĐ-TTg ngày 16/6/2017 của Thủ tướng Chính phủ phê duyệt Chương trình mục tiêu phát triển Lâm nghiệp bền vững giai đoạn 2016 – 2020',
+'Thông tư số 04/2018/TT-BTC ngày 17/01/2018 của Bộ Tài chính Hướng dẫn quản lý và sử dụng tiền dịch vụ môi trường rừng',
+'Quyết định số 5249/QĐ-BNN-TCCB ngày 28/12/2018 về việc phát động Phong trào thi đua đặc biệt',
+'Quyết định số 2962/QĐ-BNN-TCLN ngày 30/7/2019 của Bộ Nông nghiệp và Phát triển nông thôn Ban hành Hướng dẫn kỹ thuật trồng rừng thâm canh gỗ lớn và chuyển hóa rừng trồng gỗ nhỏ sang rừng trồng gỗ lớn đối với loài cây Keo lai và Keo tai tượng',
+'Nghị quyết số 26-NQ/TW của Bộ Chính trị ngày 03/11/2022 về phát triển kinh tế – xã hội và bảo đảm quốc phòng, an ninh vùng Bắc Trung Bộ và duyên hải Trung Bộ và duyên hải Trung Bộ đến năm 2030, tầm nhìn đến năm 2045',
+'Nghị quyết số 168/NQ-CP ngày 29/12/2022 của Chính phủ Ban hành Chương trình hành động của Chính phủ thực hiện Nghị quyết số 26-NQ/TW ngày 03/11/2022 của Bộ Chính trị về phát triển kinh tế – xã hội và bảo đảm quốc phòng, an ninh vùng Bắc Trung bộ và duyên hải Trung Bộ đến năm 2030, tầm nhìn đến năm 2045',
+'Cục Lâm nghiệp Thông báo Giới thiệu chức danh và chữ ký của ông Đoàn Hoài Nam – Phó Cục trưởng Cục Lâm nghiệp',
+'Cục Lâm nghiệp Thông báo Giới thiệu chức danh và chữ ký của ông Phạm Hồng Lượng – Phó Cục trưởng Cục Lâm nghiệp',
+]
+
+string_arr.forEach(element => {
+    console.log(createSlug(element));
+});
         });
     </script>
 </body>

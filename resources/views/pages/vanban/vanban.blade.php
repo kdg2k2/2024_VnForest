@@ -17,55 +17,12 @@
         <div class="page-wrapper page-right-sidebar">
           <div class="row">
             <div id="content" class="large-9 left col col-divided" role="main">
-              <div class="page-inner">
-                
-                <div class="document-search">
-                  <div class="document-search-title">TÌM KIẾM VĂN BẢN</div>
-                  <div class="document-search-input">
-                    <table class="table search-condition">
-                      <tbody>
-                        <tr>
-                          <td>
-                            <div class="label">
-                              <span>Lĩnh vực:</span>
-                            </div>
-                            <div class="input">
-                              <select name="ctrl_191017_163$drdDocCategory" id="ctrl_191017_163_drdDocCategory">
-                                <option selected="selected" value="0">-- Tất cả --</option>
-                              </select>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="label">
-                              <span>Loại văn bản:</span>
-                            </div>
-                            <div class="input">
-                              <select name="ctrl_191017_163$drdDocOrg" id="ctrl_191017_163_drdDocOrg">
-                                <option selected="selected" value="0">-- Tất cả --</option>
-                              </select>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="label">
-                              <span>Năm ban hành:</span>
-                            </div>
-                            <div class="input">
-                              <select name="ctrl_191017_163$drdDocYear" id="ctrl_191017_163_drdDocYear">
-                                <option selected="selected" value="0">-- Tất cả --</option>
-                              </select>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-
+              <div class="page-inner">                
                 <div class="row large-columns-1 medium-columns-1 small-columns-1 has-shadow row-box-shadow-1 row-box-shadow-1-hover">
                   @foreach ($data as $item)
                   <div class="col post-item">
                     <div class="col-inner">
-                      <a href="/van-ban/{{ $item->slug }}" class="plain">
+                      <a href="/van-ban/detail/{{ $item->slug }}" class="plain">
                         <div class="box box-vertical box-text-bottom box-blog-post has-hover">
                           <div class="box-text text-left is-small">
                             <div class="box-text-inner blog-post-inner">

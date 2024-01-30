@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 29, 2024 at 11:12 AM
+-- Generation Time: Jan 30, 2024 at 10:57 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -186,7 +186,8 @@ INSERT INTO `loaivanban` (`id`, `tenloaivb`, `slug`) VALUES
 (5, 'Quyết định', 'quyet-dinh'),
 (6, 'Thông tư', 'thong-tu'),
 (7, 'Công văn, quyết định', 'cong-van--quyet-dinh'),
-(8, 'Văn bản khác', 'van-ban-khac');
+(8, 'Văn bản khác', 'van-ban-khac'),
+(9, 'Chỉ Đạo Điều Hành', 'chi-dao-dieu-hanh');
 
 -- --------------------------------------------------------
 
@@ -256,7 +257,20 @@ CREATE TABLE `vanban` (
 --
 
 INSERT INTO `vanban` (`id`, `id_loaivb`, `id_linhvuc`, `id_user`, `slug`, `tenvb`, `sohieu`, `namphathanh`, `donviphathanh`, `path`, `created_at`, `updated_at`) VALUES
-(6, 7, 39, 1, 'test_van-ban-he-thong', 'Văn bản hệ thống', 'test', 2024, 'test 345', 'VanBan/2024_Công văn, quyết định_Lâm nghiệp_test.pdf', '2024-01-29 02:09:38', '2024-01-29 02:09:38');
+(7, 3, 39, 1, 'luat-bao-ve-bi-mat-nha-nuoc', 'Luật Bảo vệ Bí mật Nhà nước', NULL, 2010, NULL, 'VanBan/5249963730021533305_1.-Luat-BVBNMM-QH14.pdf', NULL, NULL),
+(8, 3, 39, 1, 'luat-lam-nghiep-so-16-2017-qh14', 'Luật Lâm nghiệp số 16/2017/QH14', NULL, 2010, NULL, 'VanBan/VanBanGoc_Luat_LamNghiep-2017.pdf', NULL, NULL),
+(9, 4, 39, 1, 'nghi-dinh-so-156-2018-nd-cp-ngay-16-11-2018-cua-chinh-phu-quy-dinh-chi-tiet-thi-hanh-mot-so-dieu-cua-luat-lam-nghiep', 'Nghị định số 156/2018/NĐ-CP ngày 16/11/2018 của Chính phủ quy định chi tiết thi hành một số điều của Luật Lâm nghiệp', NULL, 2011, NULL, 'VanBan/156_2018_ND_CP.pdf', NULL, NULL),
+(10, 4, 39, 1, 'nghi-dinh-so-01-2019-nd-cp-ngay-01-012019-cua-thu-tuong-chinh-phu-ve-kiem-lam-va-luc-luong-chuyen-trach-bao-ve-rung', 'Nghị định số 01/2019/NĐ-CP ngày 01/012019 của Thủ tướng Chính phủ về Kiểm lâm và Lực lượng chuyên trách bảo vệ rừng', NULL, 2011, NULL, 'VanBan/ND-01_2019_ND-CP-ve-Kiem-lam-va-LLCTBVR.pdf', NULL, NULL),
+(11, 5, 39, 1, 'quyet-dinh-so-38-2016-qd-ttg-ngay-14-9-2016-cua-thu-tuong-chinh-phu-ve-viec-ban-hanh-mot-so-chinh-sach-bao-ve--phat-trien-rung-va-dau-tu-ho-tro-ket-cau-ha-tang--giao-nhiem-vu-cong-ich-doi-voi-cac-cong-ty-nong--lam-nghiep', 'Quyết định số 38/2016/QĐ-TTg ngày 14/9/2016 của Thủ tướng Chính phủ về việc ban hành một số chính sách bảo vệ, phát triển rừng và đầu tư hỗ trợ kết cấu hạ tầng, giao nhiệm vụ công ích đối với các công ty nông, lâm nghiệp', NULL, 2012, NULL, 'VanBan/Quyet_dinh_38_-_2016.signed.pdf', NULL, NULL),
+(12, 5, 39, 1, 'quyet-dinh-1439-qd-bnn-tcln-ngay-25-4-2016-cua-bo-nong-nghiep-va-phat-trien-nong-thon-ve-viec-ban-hanh-quy-che-quan-ly-va-su-dung-he-thong-thong-tin-quan-ly-nganh-lam-nghiep', 'Quyết định 1439/QĐ-BNN-TCLN ngày 25/4/2016 của Bộ Nông nghiệp và Phát triển nông thôn về việc ban hành Quy chế quản lý và sử dụng Hệ thống Thông tin quản lý ngành Lâm nghiệp', NULL, 2012, NULL, 'VanBan/QD-1439-Quy-che-QL-va-SD-He-thong-TTQL.pdf', NULL, NULL),
+(13, 6, 39, 1, 'thong-tu-so-21-2017-tt-bnnptnt-ngay-15-11-2017-cua-bo-nong-nghiep-va-phat-trien-nong-thon-huong-dan-thuc-hien-quyet-dinh-so-886-qd-ttg-ngay-16-6-2017-cua-thu-tuong-chinh-phu-phe-duyet-chuong-trinh-muc-tieu-phat-trien-lam-nghiep-ben-vung-giai-doan-2016-–-2020', 'Thông tư số 21/2017/TT-BNNPTNT ngày 15/11/2017 của Bộ Nông nghiệp và Phát triển nông thôn Hướng dẫn thực hiện Quyết định số 886/QĐ-TTg ngày 16/6/2017 của Thủ tướng Chính phủ phê duyệt Chương trình mục tiêu phát triển Lâm nghiệp bền vững giai đoạn 2016 – 2020', NULL, 2013, NULL, 'VanBan/Thong_tu_21-15.11.2017_huong_dan_CTMT.pdf', NULL, NULL),
+(14, 6, 39, 1, 'thong-tu-so-04-2018-tt-btc-ngay-17-01-2018-cua-bo-tai-chinh-huong-dan-quan-ly-va-su-dung-tien-dich-vu-moi-truong-rung', 'Thông tư số 04/2018/TT-BTC ngày 17/01/2018 của Bộ Tài chính Hướng dẫn quản lý và sử dụng tiền dịch vụ môi trường rừng', NULL, 2013, NULL, 'VanBan/04_2018_TT-BTC.pdf', NULL, NULL),
+(15, 7, 39, 1, 'quyet-dinh-so-5249-qd-bnn-tccb-ngay-28-12-2018-ve-viec-phat-dong-phong-trao-thi-dua-dac-biet', 'Quyết định số 5249/QĐ-BNN-TCCB ngày 28/12/2018 về việc phát động Phong trào thi đua đặc biệt', NULL, 2014, NULL, 'VanBan/QD-5249_Phongtraothidua.pdf', NULL, NULL),
+(16, 7, 39, 1, 'quyet-dinh-so-2962-qd-bnn-tcln-ngay-30-7-2019-cua-bo-nong-nghiep-va-phat-trien-nong-thon-ban-hanh-huong-dan-ky-thuat-trong-rung-tham-canh-go-lon-va-chuyen-hoa-rung-trong-go-nho-sang-rung-trong-go-lon-doi-voi-loai-cay-keo-lai-va-keo-tai-tuong', 'Quyết định số 2962/QĐ-BNN-TCLN ngày 30/7/2019 của Bộ Nông nghiệp và Phát triển nông thôn Ban hành Hướng dẫn kỹ thuật trồng rừng thâm canh gỗ lớn và chuyển hóa rừng trồng gỗ nhỏ sang rừng trồng gỗ lớn đối với loài cây Keo lai và Keo tai tượng', NULL, 2014, NULL, 'VanBan/HDKT_Trong-rung-go-lon.zip', NULL, NULL),
+(17, 8, 39, 1, 'nghi-quyet-so-26-nq-tw-cua-bo-chinh-tri-ngay-03-11-2022-ve-phat-trien-kinh-te-–-xa-hoi-va-bao-dam-quoc-phong--an-ninh-vung-bac-trung-bo-va-duyen-hai-trung-bo-va-duyen-hai-trung-bo-den-nam-2030--tam-nhin-den-nam-2045', 'Nghị quyết số 26-NQ/TW của Bộ Chính trị ngày 03/11/2022 về phát triển kinh tế – xã hội và bảo đảm quốc phòng, an ninh vùng Bắc Trung Bộ và duyên hải Trung Bộ và duyên hải Trung Bộ đến năm 2030, tầm nhìn đến năm 2045', NULL, 2015, NULL, 'VanBan/5249939512311428195_Nghiquyet26.signed-1.pdf', NULL, NULL),
+(18, 8, 39, 1, 'nghi-quyet-so-168-nq-cp-ngay-29-12-2022-cua-chinh-phu-ban-hanh-chuong-trinh-hanh-dong-cua-chinh-phu-thuc-hien-nghi-quyet-so-26-nq-tw-ngay-03-11-2022-cua-bo-chinh-tri-ve-phat-trien-kinh-te-–-xa-hoi-va-bao-dam-quoc-phong--an-ninh-vung-bac-trung-bo-va-duyen-hai-trung-bo-den-nam-2030--tam-nhin-den-nam-2045', 'Nghị quyết số 168/NQ-CP ngày 29/12/2022 của Chính phủ Ban hành Chương trình hành động của Chính phủ thực hiện Nghị quyết số 26-NQ/TW ngày 03/11/2022 của Bộ Chính trị về phát triển kinh tế – xã hội và bảo đảm quốc phòng, an ninh vùng Bắc Trung bộ và duyên hải Trung Bộ đến năm 2030, tầm nhìn đến năm 2045', NULL, 2015, NULL, 'VanBan/5249939518056078430_168nq.signed.pdf', NULL, NULL),
+(19, 9, 39, 1, 'cuc-lam-nghiep-thong-bao-gioi-thieu-chuc-danh-va-chu-ky-cua-ong-doan-hoai-nam-–-pho-cuc-truong-cuc-lam-nghiep', 'Cục Lâm nghiệp Thông báo Giới thiệu chức danh và chữ ký của ông Đoàn Hoài Nam – Phó Cục trưởng Cục Lâm nghiệp', NULL, 2015, NULL, 'VanBan/5250085684024423511_18_TB-LN-VP.pdf', NULL, NULL),
+(20, 9, 39, 1, 'cuc-lam-nghiep-thong-bao-gioi-thieu-chuc-danh-va-chu-ky-cua-ong-pham-hong-luong-–-pho-cuc-truong-cuc-lam-nghiep', 'Cục Lâm nghiệp Thông báo Giới thiệu chức danh và chữ ký của ông Phạm Hồng Lượng – Phó Cục trưởng Cục Lâm nghiệp', NULL, 2015, NULL, 'VanBan/5250085684351064889_19_TB-LN-VP.pdf', NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -323,7 +337,7 @@ ALTER TABLE `loaitintuc`
 -- AUTO_INCREMENT for table `loaivanban`
 --
 ALTER TABLE `loaivanban`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `tintuc`
@@ -341,7 +355,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `vanban`
 --
 ALTER TABLE `vanban`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- Constraints for dumped tables

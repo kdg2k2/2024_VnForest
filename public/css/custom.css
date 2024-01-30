@@ -4,7 +4,7 @@
     border-radius: 5px;
 }
 
-.btn-sm:hover{
+.btn-sm:hover {
     background-color: #fff;
     border: solid 1px #1c1b1b;
 }
@@ -23,6 +23,42 @@
     border-radius: 15%;
 }
 
-.pagination li.page-item.active{
+.pagination li.page-item:hover{
     background: #1c925f;
+}
+
+.pagination li.page-item.active {
+    background: #1c925f;
+}
+
+.table.search-condition tbody td.td_select {
+    width: 33.33%;
+}
+
+#search_btn {
+    background-color: #63ebbd;
+    border-radius: 10px;
+    color: #fff;
+}
+
+#reset_btn {
+    background-color: #6395eb;
+    border-radius: 10px;
+    color: #fff;
+    padding: 7px 15px;
+    border: 1px solid #fff;
+}
+
+#search_btn:hover {
+    border-color: #63ebbd;
+    background-color: #fff;
+}
+
+#reset_btn:hover {
+    border-color: #6395eb;
+    background-color: #fff;
+}
+
+#search_btn:hover i, #reset_btn:hover i{
+    color: #1c1b1b;
 }

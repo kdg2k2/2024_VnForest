@@ -5,10 +5,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'WebController@getHome');
 
 // văn bản
-Route::get('/van-ban', 'WebController@getVanban');
-Route::get('/van-ban/{slug}', 'WebController@getXemVanban');
+Route::get('/van-ban/search', 'WebController@getSearchVanBan');
+Route::get('/van-ban/detail/{slug}', 'WebController@getXemVanban');
 Route::get('/van-ban/download/{slug}', 'WebController@getDownloadVanBan');
 Route::get('/van-ban/view/{slug}', 'WebController@getViewVanBan');
+Route::get('/van-ban/{slug}', 'WebController@getVanban');
 
 //tin tức
 Route::get('/tin-tuc', 'WebController@getTintuc');

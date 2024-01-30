@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\LinhVuc;
+use App\LoaiTinTuc;
+use App\LoaiVanBan;
 use App\TinTuc;
 use App\VanBan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Storage;
 
@@ -28,12 +32,18 @@ class WebController extends Controller
         return view('pages.tintuc.xemtin');
     }
 
-    public function getVanban()
+    public function getVanban(Request $request)
     {
-        $data = VanBan::orderBy('id')->paginate(10);
-        return view('pages.vanban.vanban', [
-            'data' => $data,
-        ]);
+        $key = explode('/', $request->path());
+        $id_loaivb = LoaiVanBan::where('slug', $key[1])->first()->id;
+        if($id_loaivb){
+            $data = VanBan::where('id_loaivb', $id_loaivb)->orderBy('id')->paginate(10);
+            return view('pages.vanban.vanban', [
+                'data' => $data,
+            ]);
+        }else{
+            return 'Không tìm thấy loại văn bản';
+        }
     }
 
     public function getXemVanban($slug)
@@ -48,7 +58,7 @@ class WebController extends Controller
     {
         $file = Vanban::where('slug', $slug)->first();
         $path = storage_path('app/' . $file->path);
-        if(file_exists($path)){
+        if (file_exists($path)) {
             return response()->download($path);
         } else {
             abort(404);
@@ -61,26 +71,69 @@ class WebController extends Controller
         $path = storage_path('app/' . $file->path);
 
         $name = explode('/', $path);
-        if (Storage::disk('local')->exists($path)) {
+        if (file_exists($path)) {
             $ext = pathinfo($path, PATHINFO_EXTENSION);
             if ($ext == 'pdf') {
                 return Response::make(file_get_contents($path), 200, [
                     'Content-Type' => 'application/pdf',
-                    'Content-Disposition' => 'inline; filename="' . $path . '"'
+                    'Content-Disposition' => 'inline; filename="' . $file->path . '"'
                 ]);
-            } else if ($ext == 'doc' || $ext == 'xls' || $ext == 'docx' || $ext == 'xlsx') {
-                // Sử dụng hàm để lấy URL origin
-                $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
-                $host = $_SERVER['HTTP_HOST'];
-                $url = $protocol . '://' . $host.'/'.$path;
-                
-                $viewUrl = "https://docs.google.com/gview?url=" . $url . "&embedded=true";
-                return redirect($viewUrl);
+            } elseif ($ext == 'doc' || $ext == 'docx' || $ext == 'xls' || $ext == 'xlsx') {
+                $filename_clone = $name[2] . "." . $ext;
+                File::makeDirectory(public_path('vanban'), $mode = 0777, true, true);
+                $clone = public_path("vanban/$filename_clone");
+                File::copy($path, $clone);
+                $url = 'https://view.officeapps.live.com/op/embed.aspx?src=http:127.0.0.1:8000/vanban/' . $filename_clone . '&embedded=true';
+                return redirect($url);
             } else {
-                echo "File " . $name[1] . " không hỗ trợ xem trực tiếp. Vui lòng tải về.";
+                echo "File " . $name[2] . " không hỗ trợ xem trực tiếp. Vui lòng tải về.";
             }
         } else {
-            echo "File " . $name[1] . " không tồn tại trong hệ thống.";
+            echo "File " . $name[2] . " không tồn tại trong hệ thống.";
         }
+    }
+
+    public function getSearchVanBan(Request $request)
+    {
+        $linhvuc = LinhVuc::orderByDesc('id')->get();
+        $loaivb = LoaiVanBan::orderByDesc('id')->get();
+
+        $id_linhvuc = 0;
+        $id_loaivb = 0;
+        $nam = 0;
+        $keyword = '';
+
+        if ($request->linhvuc != null || $request->loaivb != null || $request->namphathanh != null) {
+            $q = VanBan::orderByDesc('id');
+            if ($request->linhvuc != null) {
+                $q->where('id_linhvuc', $request->linhvuc);
+                $id_linhvuc = $request->linhvuc;
+            }
+            if ($request->loaivb != null) {
+                $q->where('id_loaivb', $request->loaivb);
+                $id_loaivb = $request->loaivb;
+            }
+            if ($request->namphathanh != null) {
+                $q->where('namphathanh', $request->namphathanh);
+                $nam = $request->namphathanh;
+            }
+            if ($request->keyword != null) {
+                $q->where('tenvb', 'like', '%'.$request->keyword.'%')->orWhere('sohieu', 'like', '%'.$request->keyword.'%');
+                $keyword = $request->keyword;
+            }
+            $data  = $q->paginate(10);
+        } else {
+            $data = VanBan::orderByDesc('id')->paginate(10);
+        }
+
+        return view('pages.vanban.search', [
+            'data' => $data,
+            'linhvuc' => $linhvuc,
+            'loaivb' => $loaivb,
+            'id_linhvuc' => $id_linhvuc,
+            'id_loaivb' => $id_loaivb,
+            'nam' => $nam,
+            'keyword' => $keyword,
+        ]);
     }
 }
