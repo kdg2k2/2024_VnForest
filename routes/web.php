@@ -21,7 +21,7 @@ Route::post('/login', 'LoginController@postLogin');
 Route::get('/logout', 'LoginController@getLogout');
 
 //quản trị
-Route::group(['prefix' => 'admin'/*, 'middleware' => 'isLogin'*/], function () {
+Route::group(['prefix' => 'admin', 'middleware' => 'isLogin'], function () {
     //user
     Route::group(['prefix' => 'user'], function () {
         Route::get('/', 'UserController@index');
