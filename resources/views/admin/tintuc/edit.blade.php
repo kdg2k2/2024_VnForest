@@ -36,7 +36,7 @@
                             <nav aria-label="breadcrumb" role="navigation">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item">
-                                        <a href="/logged">Trang Chủ</a>
+                                        <a href="#">Trang Chủ</a>
                                     </li>
                                     <li class="breadcrumb-item active" aria-current="page">
                                         Tin Tức
@@ -58,12 +58,12 @@
                         @method('patch')
                         <div class="form-group">
                             <label for="tentt">Tên tiêu đề</label>
-                            <input type="text" class="form-control" name="tentt" value="{{ $data->tentt }}">
+                            <input type="text" class="form-control" name="tentt" value="{{ $data->tentt }}" required>
                         </div>
 
                         <div class="form-group">
                             <label for="id_loaitt">Loại tin</label>
-                            <select class="form-select form-control js-example-basic-single" name="id_loaitt">
+                            <select class="form-select form-control js-example-basic-single" name="id_loaitt" required>
                                 <option value="" selected>Chọn loại tin</option>
                                 @foreach ($loaitt as $item)
                                 <option value="{{ $item->id }}" {{ $data->id_loaitt==$item->id ? 'selected' : '' }}>{{ $item->tenloaitt }}</option>
@@ -77,7 +77,7 @@
 
                         <div class="form-group">
                             <label for="noidung">Nội dung</label>
-                            <textarea id="noidung" class="form-control ckeditor" name="noidung" rows="3">{{ $data->noidung }}</textarea>
+                            <textarea id="noidung" class="form-control ckeditor" name="noidung" rows="3" required>{{ $data->noidung }}</textarea>
                         </div>
 
                         <div class="form-group">
@@ -124,6 +124,18 @@
                 reader.readAsDataURL(this.files[0]);
             }
         });
+
+        document.querySelector('.post-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            var titleInput = document.querySelector('input[name="tentt"]');
+            var titleValue = titleInput.value;
+
+            var slugInput = document.querySelector('input[name="slug"]');
+            slugInput.value = createSlug(titleValue);
+
+            this.submit();
+        })
     </script>
 </body>
 

@@ -39,6 +39,10 @@
     .select2-container--default .select2-selection--single .select2-selection__rendered {
         line-height: 45px !important;
     }
+
+    .row .card.comp-card:hover{
+        border-color: #159a2b;
+    }
 </style>
 
 <!-- Tải CSS của Select2 -->

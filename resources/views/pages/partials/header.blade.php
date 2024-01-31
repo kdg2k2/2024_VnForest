@@ -199,7 +199,7 @@
               <a href="/" aria-current="page" class="nav-top-link">Trang chủ</a>
             </li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-63 current_page_item menu-item-316  menu-item-design-default">
-              <a href="/gioi-thieu" aria-current="page" class="nav-top-link">Giới Thiệu</a>
+              <a href="/gioi-thieu-chung" aria-current="page" class="nav-top-link">Giới Thiệu</a>
             </li>
             <li id="menu-item-344" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-344 menu-item-design-default has-dropdown">
               <a class="nav-top-link">Tin tức tổng hợp <i class="icon-angle-down"></i>
@@ -268,12 +268,6 @@
                 <li id="menu-item-1471" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1471">
                   <a href="/category/cai-cach-hanh-chinh/cai-cach-hanh-chinh-cai-cach-hanh-chinh/">Cải cách hành chính</a>
                 </li>
-                <li id="menu-item-816" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-816">
-                  <a href="/category/cai-cach-hanh-chinh/tin-tuc-cai-cach-hanh-chinh/">Tin tức cải cách hành chính</a>
-                </li>
-                <li id="menu-item-1472" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1472">
-                  <a href="/category/cai-cach-hanh-chinh/van-ban-cai-cach-hanh-chinh/">Văn bản cải cách hành chính</a>
-                </li>
               </ul>
             </li>
           </ul>
@@ -312,7 +306,7 @@
         <a href="/" aria-current="page">Trang chủ</a>
       </li>
       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-63 current_page_item menu-item-316">
-        <a href="/gioi-thieu" aria-current="page">Giới Thiệu</a>
+        <a href="/gioi-thieu-chung" aria-current="page">Giới Thiệu</a>
       </li>
       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-344">
         <a>Tin tức tổng hợp</a>

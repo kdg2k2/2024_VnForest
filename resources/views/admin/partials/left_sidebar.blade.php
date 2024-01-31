@@ -13,16 +13,27 @@
     <div class="sidebar-menu">
       <ul id="accordion-menu">
         {{-- <li>
-          <div class="sidebar-small-cap">Trang Chủ</div>
+          <div class="sidebar-small-cap">Thống Kê</div>
+        </li> --}}
+        <li class="{{ Str::contains(Request::url(), '/admin/home') ? 'active' : '' }}">
+          <a href="/admin/home" class="dropdown-toggle no-arrow {{ Str::contains(Request::url(), '/admin/home') ? 'active' : '' }}">
+            <span class="micon icon-copy fa fa-home"></span><span class="mtext">Trang Chủ</span>
+          </a>
         </li>
         <li>
-          <a href="/logged" class="dropdown-toggle no-arrow">
-            <span class="micon icon-copy bi bi-house"></span><span class="mtext">Trang Chủ</span>
-          </a>
-        </li> --}}
-        {{-- <li>
           <div class="dropdown-divider"></div>
-        </li> --}}
+        </li>
+        <li>
+          <div class="sidebar-small-cap">Quản Lý Bài Giới Thiệu</div>
+        </li>
+        <li class="{{ Str::contains(Request::url(), '/admin/gioithieu/gtc/edit') ? 'active' : '' }}">
+          <a href="/admin/gioithieu/gtc/edit" class="dropdown-toggle no-arrow {{ Str::contains(Request::url(), '/admin/gioithieu/gtc/edit') ? 'active' : '' }}">
+            <span class="micon icon-copy fa fa-bullhorn"></span><span class="mtext">Giới Thiệu Chung</span>
+          </a>
+        </li>
+        <li>
+          <div class="dropdown-divider"></div>
+        </li>
         <li>
           <div class="sidebar-small-cap">Quản Lý Văn Bản</div>
         </li>
@@ -56,11 +67,11 @@
           <div class="dropdown-divider"></div>
         </li>
         <li>
-          <div class="sidebar-small-cap">Quản Lý Bài Viết</div>
+          <div class="sidebar-small-cap">Quản Lý Tin Tức</div>
         </li>
         <li class="{{ Str::contains(Request::url(), '/admin/loaitt') ? 'active' : '' }}">
           <a href="/admin/loaitt" class="dropdown-toggle no-arrow {{ Str::contains(Request::url(), '/admin/loaitt') ? 'active' : '' }}">
-            <span class="micon icon-copy bi bi-journal-richtext"></span><span class="mtext">Loại tin tức</span>
+            <span class="micon icon-copy bi bi-journal-richtext"></span><span class="mtext">Loại Tin Tức</span>
           </a>
         </li>
         <li class="{{ Str::contains(Request::url(), '/admin/tintuc') ? 'active' : '' }}">
@@ -69,7 +80,7 @@
           </a>
         </li>
 
-        <li>
+        {{-- <li>
           <div class="dropdown-divider"></div>
         </li>
         <li>
@@ -79,7 +90,7 @@
           <a href="/admin/user" class="dropdown-toggle no-arrow {{ Str::contains(Request::url(), '/admin/user') ? 'active' : '' }}">
             <span class="micon icon-copy bi bi-person-lines-fill"></span><span class="mtext">Quản Lý Người Dùng</span>
           </a>
-        </li>
+        </li> --}}
       </ul>
     </div>
   </div>

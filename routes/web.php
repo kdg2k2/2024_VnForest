@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'WebController@getHome');
 
+//giới thiệu
+Route::get('/gioi-thieu-chung', 'WebController@getGtc');
+
 // văn bản
 Route::get('/van-ban/search', 'WebController@getSearchVanBan');
 Route::get('/van-ban/detail/{slug}', 'WebController@getXemVanban');
@@ -13,7 +16,7 @@ Route::get('/van-ban/{slug}', 'WebController@getVanban');
 
 //tin tức
 Route::get('/tin-tuc', 'WebController@getTintuc');
-Route::get('/tin-tuc/{slug}', 'WebController@getXemtin');
+Route::get('/tin-tuc/detail/{slug}', 'WebController@getXemtin');
 
 //đăng nhập
 Route::get('/login', 'LoginController@getLogin');
@@ -22,6 +25,8 @@ Route::get('/logout', 'LoginController@getLogout');
 
 //quản trị
 Route::group(['prefix' => 'admin', 'middleware' => 'isLogin'], function () {
+    Route::get('/home', 'AdminController@getHome');
+
     //user
     Route::group(['prefix' => 'user'], function () {
         Route::get('/', 'UserController@index');
@@ -84,5 +89,11 @@ Route::group(['prefix' => 'admin', 'middleware' => 'isLogin'], function () {
         Route::get('/edit/{id}', 'TinTucController@edit');
         Route::patch('/update/{id}', 'TinTucController@update');
         Route::delete('/delete/{id}', 'TinTucController@destroy');
+    });
+
+    //giới thiệu
+    Route::group(['prefix' => 'gioithieu'], function () {
+        Route::get('/gtc/edit', 'GioiThieuController@editGtc');
+        Route::patch('/gtc/update', 'GioiThieuController@updateGtc');
     });
 });

@@ -13,7 +13,9 @@
   <head> @include('pages.partials.head') </head>
   <body class="archive category category-tin-tong-cuc-lam-nghiep category-2 _masterslider _ms_version_3.9.5 header-shadow lightbox nav-dropdown-has-arrow nav-dropdown-has-shadow nav-dropdown-has-border mobile-submenu-slide mobile-submenu-slide-levels-1 mobile-submenu-toggle">
     <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
-    <div id="wrapper"> @include('pages.partials.header') <main id="main" class="">
+    <div id="wrapper"> 
+      @include('pages.partials.header') 
+      <main id="main" class="">
         <div id="content" class="blog-wrapper blog-archive page-wrapper">
           <div class="row row-large row-divided ">
             <div class="large-9 col">

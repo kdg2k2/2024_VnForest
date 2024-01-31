@@ -38,7 +38,7 @@
             
           </span>
           <span class="user-name">
-            username
+            {{ Auth::user()->username }}
         </span>
         </a>
         @php

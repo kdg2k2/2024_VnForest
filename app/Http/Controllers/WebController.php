@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\GioiThieuChung;
 use App\LinhVuc;
 use App\LoaiTinTuc;
 use App\LoaiVanBan;
@@ -16,7 +17,26 @@ class WebController extends Controller
 {
     public function getHome()
     {
-        return view('pages.home.home');
+        $tinsukien = TinTuc::whereIn('id_loaitt', [2,3,4,5])->limit(10)->get();
+        $tainguyenrung = TinTuc::whereIn('id_loaitt', [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30])->limit(6)->get();
+        $chuyendoiso = TinTuc::where('id_loaitt', 32)->limit(10)->get();
+        $chidaodieuhanh = VanBan::where('id_loaivb', 9)->limit(4)->get();
+        $tintuyendung = TinTuc::where('id_loaitt', 6)->limit(4)->get();
+
+        return view('pages.home.home',[
+            'tinsukien' => $tinsukien,
+            'tainguyenrung' => $tainguyenrung,
+            'chuyendoiso' => $chuyendoiso,
+            'chidaodieuhanh' => $chidaodieuhanh,
+            'tintuyendung' => $tintuyendung,
+        ]);
+    }
+
+    public function getGtc(){
+        $data = GioiThieuChung::findOrFail(1);
+        return view('pages.gioithieu.gtc', [
+            'data' => $data,
+        ]);
     }
 
     public function getTintuc()
@@ -27,9 +47,12 @@ class WebController extends Controller
         ]);
     }
 
-    public function getXemtin()
+    public function getXemtin($slug)
     {
-        return view('pages.tintuc.xemtin');
+        $data = TinTuc::where('slug', $slug)->first();
+        return view('pages.tintuc.xemtin', [
+            'data' => $data,
+        ]);
     }
 
     public function getVanban(Request $request)

@@ -33,7 +33,7 @@ $config['authentication'] = function () {
 // https://ckeditor.com/docs/ckfinder/ckfinder3-php/configuration.html#configuration_options_licenseKey
 
 $config['licenseName'] = 'localhost';
-$config['licenseKey']  = 'UPTP4BGHY8X4DZNHLMBT47BQCKAJ3';
+$config['licenseKey']  = '*8?A-*1**-H**L-*J**-*F**-1*V*-3**K';
 
 
 /*============================ CKFinder Internal Directory ============================*/
